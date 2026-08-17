@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cristo Rey en México — Archivo 1953–2014</title>
 <style>
-:root{--bg:#f6f1e8;--bg-card:#fffdf8;--ink:#1f1a14;--ink-soft:#4a4035;--muted:#7a6d5c;--accent:#8b1e1e;--accent-dark:#5c1212;--gold:#b08d3e;--gold-soft:#e8d5a3;--line:#e0d4c0;--shadow:0 10px 40px rgba(31,26,20,.08);--radius:14px;--serif:"Palatino Linotype",Palatino,Georgia,serif;--sans:"Segoe UI",system-ui,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--serif);color:var(--ink);line-height:1.65;min-height:100vh;background:radial-gradient(ellipse at top,#fff9ef,transparent 50%),linear-gradient(180deg,#efe6d6,var(--bg) 30%,#f3ebe0)}
-a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}.wrap{width:min(980px,calc(100% - 2rem));margin:0 auto}
-.hero{text-align:center;padding:2.4rem 0 1.6rem;border-bottom:1px solid var(--line)}.hero h1{margin:0;color:var(--accent-dark);font-size:clamp(1.7rem,4vw,2.4rem)}
-.hero .subtitle{color:var(--ink-soft)}.stats-pill{display:inline-block;margin-top:.8rem;padding:.4rem .9rem;border-radius:999px;border:1px solid var(--gold-soft);font-family:var(--sans);font-size:.82rem;color:var(--accent-dark);background:rgba(255,255,255,.55)}
+:root{--bg:#f3eadc;--bg-card:#fffdf8;--ink:#241c14;--ink-soft:#4a4035;--muted:#7a6d5c;--accent:#8b1e1e;--accent-dark:#5c1212;--gold:#b08d3e;--gold-soft:#e8d5a3;--line:#e0d4c0;--shadow:0 12px 36px rgba(36,28,20,.08);--radius:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;--sans:"Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--serif);color:var(--ink);line-height:1.65;min-height:100vh;background:
+radial-gradient(ellipse 80% 40% at 50% -8%,#fff4dc,transparent 55%),
+linear-gradient(180deg,#efe4d0 0%,var(--bg) 28%,#efe6d6 100%)}
+a{color:var(--accent);text-underline-offset:.15em}a:hover{color:var(--accent-dark)}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{width:min(1080px,calc(100% - 2rem));margin:0 auto}
+.site-nav{background:linear-gradient(180deg,#6d1414,#5c1212);color:#f8efe2;font-family:var(--sans);font-size:.86rem;letter-spacing:.04em;border-bottom:3px solid var(--gold)}
+.site-nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem 1.2rem;padding:.7rem 0}
+.site-nav a{color:#f8efe2;text-decoration:none;padding:.25rem .15rem;border-bottom:2px solid transparent}
+.site-nav a:hover,.site-nav a[aria-current="page"]{color:#ffe7a8;border-bottom-color:#c9a35a}
+.site-nav .brand{font-weight:700;letter-spacing:.08em;margin-right:auto;color:#fff}
+.hero{text-align:center;padding:2.6rem 0 1.8rem;position:relative}
+.hero:after{content:"";display:block;width:min(220px,40%);height:2px;margin:1.2rem auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero .kicker{color:var(--gold);letter-spacing:.32em;font-size:.72rem;font-family:var(--sans);margin:0 0 .55rem}
+.hero h1{margin:0;color:var(--accent-dark);font-size:clamp(1.85rem,4.4vw,2.7rem);font-weight:600;letter-spacing:.01em}
+.hero .subtitle{color:var(--ink-soft);margin:.45rem 0 0;font-size:1.05rem}
+.stats-pill{display:inline-block;margin-top:.95rem;padding:.42rem 1rem;border-radius:999px;border:1px solid var(--gold-soft);font-family:var(--sans);font-size:.82rem;color:var(--accent-dark);background:rgba(255,255,255,.62)}
 .breadcrumb{font-family:var(--sans);font-size:.85rem;color:var(--muted);padding:1rem 0 0}.breadcrumb a{text-decoration:none;font-weight:500}.breadcrumb .sep{margin:0 .35rem;opacity:.5}
-.view{padding:1.2rem 0 3rem}.panel-head{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;margin-bottom:1.1rem}.panel-head h2{margin:0;color:var(--accent-dark)}
+.view{padding:1.3rem 0 3.4rem}
+.panel-head{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;margin-bottom:1.15rem}.panel-head h2{margin:0;color:var(--accent-dark)}
 .panel-sub{width:100%;margin:0;font-family:var(--sans);font-size:.9rem;color:var(--muted)}
-.back-btn{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--accent);padding:.35rem .65rem;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;display:inline-block}
-.year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr));gap:.55rem}
-.year-btn{font-family:var(--sans);font-weight:600;padding:.85rem .3rem;border-radius:10px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;display:block;text-align:center}
-.year-btn.has-content{border-color:#c9a35a;background:linear-gradient(180deg,#fff9ef,#fffdf8);color:var(--accent-dark)}
-.year-btn.has-content::after{content:"";display:block;width:6px;height:6px;margin:.35rem auto 0;border-radius:50%;background:var(--accent)}
-.year-btn.muted{opacity:.55;cursor:default}
-.month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.7rem}
-.month-btn{text-align:left;padding:1rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg-card);box-shadow:var(--shadow)}
-.month-btn.con-articulos{border-color:#c9a35a}.month-btn .month-name{font-weight:600;display:block}.month-btn .month-status{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
+.back-btn{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--accent);padding:.38rem .75rem;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;display:inline-block}
+.back-btn:hover{border-color:var(--gold);background:#fff9ef}
+.year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.8rem,1fr));gap:.6rem}
+.year-btn{font-family:var(--sans);font-weight:600;padding:.9rem .3rem .75rem;border-radius:12px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;display:block;text-align:center;transition:transform .15s ease,box-shadow .15s ease,border-color .15s}
+.year-btn.has-content{border-color:#d4b36a;background:linear-gradient(180deg,#fffaf0,#fffdf8);color:var(--accent-dark)}
+.year-btn.has-content:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--gold)}
+.year-btn.has-content::after{content:"";display:block;width:6px;height:6px;margin:.38rem auto 0;border-radius:50%;background:var(--accent)}
+.year-btn.muted{opacity:.42;cursor:default}
+.month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(11rem,1fr));gap:.75rem}
+.month-btn{text-align:left;padding:1.05rem 1rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg-card);box-shadow:0 4px 16px rgba(36,28,20,.04);transition:transform .15s ease,border-color .15s}
+.month-btn.con-articulos{border-color:#d4b36a}
+.month-btn.con-articulos:hover{transform:translateY(-2px);border-color:var(--gold)}
+.month-btn .month-name{font-weight:600;display:block;font-size:1.02rem}
+.month-btn .month-status{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
 .month-btn.con-articulos .month-status{color:var(--accent);font-weight:600}
-.art-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
-.art-list a{display:grid;grid-template-columns:2.2rem 1fr;gap:.7rem;padding:.9rem 1rem;border-radius:12px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit}
-.art-list .num{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600}
+.art-list{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.art-list a{display:grid;grid-template-columns:2.25rem 1fr;gap:.75rem;padding:1rem 1.05rem;border-radius:14px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}
+.art-list a:hover{border-color:var(--gold);box-shadow:var(--shadow)}
+.art-list .num{width:2.25rem;height:2.25rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600}
+.art-title{display:block;font-weight:600;color:var(--accent-dark);line-height:1.35}
+.art-author{display:block;margin-top:.28rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);font-style:italic}
+.art-author.anon{font-style:italic;opacity:.8}
 .empty-card{text-align:center;background:var(--bg-card);border:1px dashed #d2c4ae;border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
-.article-panel{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem}
-.article-header{border-bottom:1px solid var(--line);margin-bottom:1.1rem;padding-bottom:.8rem}
+.article-panel{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.65rem 1.7rem 1.4rem}
+.article-header{border-bottom:1px solid var(--line);margin-bottom:1.15rem;padding-bottom:.9rem}
 .article-meta{font-family:var(--sans);font-size:.82rem;color:var(--muted)}
-.badge{background:var(--accent);color:#fff;padding:.1rem .45rem;border-radius:999px;font-size:.75rem;font-weight:600;margin-right:.3rem}
-.article-header h2{margin:.3rem 0 0;color:var(--accent-dark);font-size:clamp(1.1rem,2.3vw,1.5rem)}
+.badge{background:var(--accent);color:#fff;padding:.12rem .5rem;border-radius:999px;font-size:.75rem;font-weight:600;margin-right:.3rem}
+.article-header h2{margin:.4rem 0 .35rem;color:var(--accent-dark);font-size:clamp(1.18rem,2.4vw,1.62rem);line-height:1.28}
+.byline{margin:0;font-family:var(--sans);font-size:.92rem;color:var(--ink-soft)}
+.byline em{font-style:italic;color:var(--muted)}
 .article-body p{margin:0 0 1rem;text-align:justify}.article-body h3{text-align:center;color:var(--accent)}
-.article-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1.2rem;padding-top:.9rem;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem}
-.site-footer{text-align:center;padding:1.2rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
-.years-intro{font-family:var(--sans);color:var(--ink-soft);font-size:.95rem}
+.article-body .verse{text-align:center;font-style:italic}
+.article-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem}
+.site-footer{text-align:center;padding:1.35rem 1rem 1.6rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);background:rgba(255,253,248,.45)}
+.years-intro{font-family:var(--sans);color:var(--ink-soft);font-size:.98rem;margin:0 0 1.1rem}
 .legend{font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+.home-actions{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1.15rem 0 0}
+.home-actions a{font-family:var(--sans);font-weight:600;text-decoration:none;padding:.55rem 1.05rem;border-radius:999px;border:1px solid var(--gold);background:linear-gradient(180deg,#fffaf0,#fff);color:var(--accent-dark)}
+.home-actions a:hover{background:#fff4dc}
+.alpha-tools{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin:0 0 1rem}
+.alpha-tools input{flex:1 1 16rem;font-family:var(--sans);font-size:.95rem;padding:.6rem .85rem;border:1px solid var(--line);border-radius:10px;background:#fff}
+.alpha-tools input:focus{outline:2px solid var(--gold-soft);border-color:var(--gold)}
+.letter-nav{display:flex;flex-wrap:wrap;gap:.28rem;margin:0 0 1.2rem}
+.letter-nav a{font-family:var(--sans);font-size:.78rem;font-weight:700;min-width:1.7rem;text-align:center;padding:.28rem .2rem;border-radius:7px;border:1px solid var(--line);background:#fff;color:var(--accent-dark);text-decoration:none}
+.letter-nav a:hover{border-color:var(--gold);background:#fff9ef}
+.letter-block{margin:0 0 1.5rem}
+.letter-block h2{margin:0 0 .55rem;color:var(--accent-dark);font-size:1.55rem;border-bottom:2px solid var(--gold-soft);padding-bottom:.2rem}
+.alpha-row{display:grid;grid-template-columns:1fr auto;gap:.4rem 1.1rem;align-items:baseline;padding:.62rem .2rem;border-bottom:1px solid rgba(224,212,192,.7);text-decoration:none;color:inherit}
+.alpha-row:hover{background:rgba(255,249,239,.7)}
+.alpha-row .t{font-weight:600;color:var(--accent-dark)}
+.alpha-row .meta{font-family:var(--sans);font-size:.8rem;color:var(--muted);text-align:right}
+.alpha-row .au{display:block;font-family:var(--sans);font-size:.8rem;font-style:italic;color:var(--ink-soft);margin-top:.12rem}
+@media(max-width:640px){.alpha-row{grid-template-columns:1fr}.alpha-row .meta{text-align:left}}
 [hidden]{display:none!important}
 </style></head><body>
+<nav class="site-nav"><div class="wrap"><span class="brand">Cristo Rey en México</span><a href="index.html" aria-current="page">Años</a><a href="articulos.html">Índice alfabético</a></div></nav>
 <header class="hero"><div class="wrap">
-<p style="color:var(--gold);letter-spacing:.3em;font-size:.75rem;font-family:var(--sans)">✦ ARCHIVO DIGITAL ✦</p>
+<p class="kicker">✦ ARCHIVO DIGITAL ✦</p>
 <h1>Cristo Rey en México</h1>
 <p class="subtitle">Revista · 1953 – 2014</p>
-<p class="stats-pill">319 números · 2563 artículos · 58 años</p>
+<p class="stats-pill">327 números · 2873 artículos · 60 años</p>
+<p class="home-actions"><a href="articulos.html">Ver todos los artículos (A–Z)</a></p>
 </div></header>
 <main class="wrap view">
 <section id="view-years">
 <p class="years-intro">Elija un año haciendo click. Luego elija el mes que quiere usted ver</p>
-<div class="year-grid"><a class="year-btn has-content" href="1953.html">1953</a><a class="year-btn has-content" href="1954.html">1954</a><a class="year-btn has-content" href="1955.html">1955</a><a class="year-btn has-content" href="1956.html">1956</a><a class="year-btn has-content" href="1957.html">1957</a><a class="year-btn has-content" href="1958.html">1958</a><a class="year-btn has-content" href="1959.html">1959</a><a class="year-btn has-content" href="1960.html">1960</a><a class="year-btn has-content" href="1961.html">1961</a><a class="year-btn has-content" href="1962.html">1962</a><a class="year-btn has-content" href="1963.html">1963</a><a class="year-btn has-content" href="1964.html">1964</a><a class="year-btn has-content" href="1965.html">1965</a><a class="year-btn has-content" href="1966.html">1966</a><a class="year-btn has-content" href="1967.html">1967</a><a class="year-btn has-content" href="1968.html">1968</a><a class="year-btn has-content" href="1969.html">1969</a><a class="year-btn has-content" href="1970.html">1970</a><a class="year-btn has-content" href="1971.html">1971</a><a class="year-btn has-content" href="1972.html">1972</a><a class="year-btn has-content" href="1973.html">1973</a><a class="year-btn has-content" href="1974.html">1974</a><a class="year-btn has-content" href="1975.html">1975</a><a class="year-btn has-content" href="1976.html">1976</a><a class="year-btn has-content" href="1977.html">1977</a><a class="year-btn has-content" href="1978.html">1978</a><a class="year-btn has-content" href="1979.html">1979</a><a class="year-btn has-content" href="1980.html">1980</a><a class="year-btn has-content" href="1981.html">1981</a><a class="year-btn has-content" href="1982.html">1982</a><a class="year-btn has-content" href="1983.html">1983</a><a class="year-btn has-content" href="1984.html">1984</a><a class="year-btn has-content" href="1985.html">1985</a><a class="year-btn has-content" href="1986.html">1986</a><a class="year-btn has-content" href="1987.html">1987</a><a class="year-btn has-content" href="1988.html">1988</a><a class="year-btn has-content" href="1989.html">1989</a><a class="year-btn has-content" href="1990.html">1990</a><a class="year-btn has-content" href="1991.html">1991</a><a class="year-btn has-content" href="1992.html">1992</a><a class="year-btn has-content" href="1993.html">1993</a><a class="year-btn has-content" href="1994.html">1994</a><a class="year-btn has-content" href="1995.html">1995</a><a class="year-btn has-content" href="1996.html">1996</a><a class="year-btn has-content" href="1997.html">1997</a><a class="year-btn has-content" href="1998.html">1998</a><span class="year-btn muted">1999</span><a class="year-btn has-content" href="2000.html">2000</a><a class="year-btn has-content" href="2001.html">2001</a><a class="year-btn has-content" href="2002.html">2002</a><a class="year-btn has-content" href="2003.html">2003</a><a class="year-btn has-content" href="2004.html">2004</a><a class="year-btn has-content" href="2005.html">2005</a><a class="year-btn has-content" href="2006.html">2006</a><span class="year-btn muted">2007</span><a class="year-btn has-content" href="2008.html">2008</a><a class="year-btn has-content" href="2009.html">2009</a><a class="year-btn has-content" href="2010.html">2010</a><a class="year-btn has-content" href="2011.html">2011</a><a class="year-btn has-content" href="2012.html">2012</a><span class="year-btn muted">2013</span><span class="year-btn muted">2014</span></div>
+<div class="year-grid"><a class="year-btn has-content" href="1953.html">1953</a><a class="year-btn has-content" href="1954.html">1954</a><a class="year-btn has-content" href="1955.html">1955</a><a class="year-btn has-content" href="1956.html">1956</a><a class="year-btn has-content" href="1957.html">1957</a><a class="year-btn has-content" href="1958.html">1958</a><a class="year-btn has-content" href="1959.html">1959</a><a class="year-btn has-content" href="1960.html">1960</a><a class="year-btn has-content" href="1961.html">1961</a><a class="year-btn has-content" href="1962.html">1962</a><a class="year-btn has-content" href="1963.html">1963</a><a class="year-btn has-content" href="1964.html">1964</a><a class="year-btn has-content" href="1965.html">1965</a><a class="year-btn has-content" href="1966.html">1966</a><a class="year-btn has-content" href="1967.html">1967</a><a class="year-btn has-content" href="1968.html">1968</a><a class="year-btn has-content" href="1969.html">1969</a><a class="year-btn has-content" href="1970.html">1970</a><a class="year-btn has-content" href="1971.html">1971</a><a class="year-btn has-content" href="1972.html">1972</a><a class="year-btn has-content" href="1973.html">1973</a><a class="year-btn has-content" href="1974.html">1974</a><a class="year-btn has-content" href="1975.html">1975</a><a class="year-btn has-content" href="1976.html">1976</a><a class="year-btn has-content" href="1977.html">1977</a><a class="year-btn has-content" href="1978.html">1978</a><a class="year-btn has-content" href="1979.html">1979</a><a class="year-btn has-content" href="1980.html">1980</a><a class="year-btn has-content" href="1981.html">1981</a><a class="year-btn has-content" href="1982.html">1982</a><a class="year-btn has-content" href="1983.html">1983</a><a class="year-btn has-content" href="1984.html">1984</a><a class="year-btn has-content" href="1985.html">1985</a><a class="year-btn has-content" href="1986.html">1986</a><a class="year-btn has-content" href="1987.html">1987</a><a class="year-btn has-content" href="1988.html">1988</a><a class="year-btn has-content" href="1989.html">1989</a><a class="year-btn has-content" href="1990.html">1990</a><a class="year-btn has-content" href="1991.html">1991</a><a class="year-btn has-content" href="1992.html">1992</a><a class="year-btn has-content" href="1993.html">1993</a><a class="year-btn has-content" href="1994.html">1994</a><a class="year-btn has-content" href="1995.html">1995</a><a class="year-btn has-content" href="1996.html">1996</a><a class="year-btn has-content" href="1997.html">1997</a><a class="year-btn has-content" href="1998.html">1998</a><span class="year-btn muted">1999</span><a class="year-btn has-content" href="2000.html">2000</a><a class="year-btn has-content" href="2001.html">2001</a><a class="year-btn has-content" href="2002.html">2002</a><a class="year-btn has-content" href="2003.html">2003</a><a class="year-btn has-content" href="2004.html">2004</a><a class="year-btn has-content" href="2005.html">2005</a><a class="year-btn has-content" href="2006.html">2006</a><span class="year-btn muted">2007</span><a class="year-btn has-content" href="2008.html">2008</a><a class="year-btn has-content" href="2009.html">2009</a><a class="year-btn has-content" href="2010.html">2010</a><a class="year-btn has-content" href="2011.html">2011</a><a class="year-btn has-content" href="2012.html">2012</a><a class="year-btn has-content" href="2013.html">2013</a><a class="year-btn has-content" href="2014.html">2014</a></div>
 <p class="legend">Punto rojo = año con artículos · años en gris = aún sin cargar</p>
 <p class="legend">Los años que faltan no tenían archivo PDF</p>
 </section>
 </main>
-<footer class="site-footer">Cristo Rey en México · OCR + CORREGIDO-B · un HTML por año</footer>
+<footer class="site-footer">Cristo Rey en México · Archivo digital</footer>
 
 </body></html>

@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cristo Rey en México — 2009</title>
 <style>
-:root{--bg:#f6f1e8;--bg-card:#fffdf8;--ink:#1f1a14;--ink-soft:#4a4035;--muted:#7a6d5c;--accent:#8b1e1e;--accent-dark:#5c1212;--gold:#b08d3e;--gold-soft:#e8d5a3;--line:#e0d4c0;--shadow:0 10px 40px rgba(31,26,20,.08);--radius:14px;--serif:"Palatino Linotype",Palatino,Georgia,serif;--sans:"Segoe UI",system-ui,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--serif);color:var(--ink);line-height:1.65;min-height:100vh;background:radial-gradient(ellipse at top,#fff9ef,transparent 50%),linear-gradient(180deg,#efe6d6,var(--bg) 30%,#f3ebe0)}
-a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}.wrap{width:min(980px,calc(100% - 2rem));margin:0 auto}
-.hero{text-align:center;padding:2.4rem 0 1.6rem;border-bottom:1px solid var(--line)}.hero h1{margin:0;color:var(--accent-dark);font-size:clamp(1.7rem,4vw,2.4rem)}
-.hero .subtitle{color:var(--ink-soft)}.stats-pill{display:inline-block;margin-top:.8rem;padding:.4rem .9rem;border-radius:999px;border:1px solid var(--gold-soft);font-family:var(--sans);font-size:.82rem;color:var(--accent-dark);background:rgba(255,255,255,.55)}
+:root{--bg:#f3eadc;--bg-card:#fffdf8;--ink:#241c14;--ink-soft:#4a4035;--muted:#7a6d5c;--accent:#8b1e1e;--accent-dark:#5c1212;--gold:#b08d3e;--gold-soft:#e8d5a3;--line:#e0d4c0;--shadow:0 12px 36px rgba(36,28,20,.08);--radius:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;--sans:"Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--serif);color:var(--ink);line-height:1.65;min-height:100vh;background:
+radial-gradient(ellipse 80% 40% at 50% -8%,#fff4dc,transparent 55%),
+linear-gradient(180deg,#efe4d0 0%,var(--bg) 28%,#efe6d6 100%)}
+a{color:var(--accent);text-underline-offset:.15em}a:hover{color:var(--accent-dark)}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{width:min(1080px,calc(100% - 2rem));margin:0 auto}
+.site-nav{background:linear-gradient(180deg,#6d1414,#5c1212);color:#f8efe2;font-family:var(--sans);font-size:.86rem;letter-spacing:.04em;border-bottom:3px solid var(--gold)}
+.site-nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem 1.2rem;padding:.7rem 0}
+.site-nav a{color:#f8efe2;text-decoration:none;padding:.25rem .15rem;border-bottom:2px solid transparent}
+.site-nav a:hover,.site-nav a[aria-current="page"]{color:#ffe7a8;border-bottom-color:#c9a35a}
+.site-nav .brand{font-weight:700;letter-spacing:.08em;margin-right:auto;color:#fff}
+.hero{text-align:center;padding:2.6rem 0 1.8rem;position:relative}
+.hero:after{content:"";display:block;width:min(220px,40%);height:2px;margin:1.2rem auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero .kicker{color:var(--gold);letter-spacing:.32em;font-size:.72rem;font-family:var(--sans);margin:0 0 .55rem}
+.hero h1{margin:0;color:var(--accent-dark);font-size:clamp(1.85rem,4.4vw,2.7rem);font-weight:600;letter-spacing:.01em}
+.hero .subtitle{color:var(--ink-soft);margin:.45rem 0 0;font-size:1.05rem}
+.stats-pill{display:inline-block;margin-top:.95rem;padding:.42rem 1rem;border-radius:999px;border:1px solid var(--gold-soft);font-family:var(--sans);font-size:.82rem;color:var(--accent-dark);background:rgba(255,255,255,.62)}
 .breadcrumb{font-family:var(--sans);font-size:.85rem;color:var(--muted);padding:1rem 0 0}.breadcrumb a{text-decoration:none;font-weight:500}.breadcrumb .sep{margin:0 .35rem;opacity:.5}
-.view{padding:1.2rem 0 3rem}.panel-head{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;margin-bottom:1.1rem}.panel-head h2{margin:0;color:var(--accent-dark)}
+.view{padding:1.3rem 0 3.4rem}
+.panel-head{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;margin-bottom:1.15rem}.panel-head h2{margin:0;color:var(--accent-dark)}
 .panel-sub{width:100%;margin:0;font-family:var(--sans);font-size:.9rem;color:var(--muted)}
-.back-btn{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--accent);padding:.35rem .65rem;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;display:inline-block}
-.year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr));gap:.55rem}
-.year-btn{font-family:var(--sans);font-weight:600;padding:.85rem .3rem;border-radius:10px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;display:block;text-align:center}
-.year-btn.has-content{border-color:#c9a35a;background:linear-gradient(180deg,#fff9ef,#fffdf8);color:var(--accent-dark)}
-.year-btn.has-content::after{content:"";display:block;width:6px;height:6px;margin:.35rem auto 0;border-radius:50%;background:var(--accent)}
-.year-btn.muted{opacity:.55;cursor:default}
-.month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.7rem}
-.month-btn{text-align:left;padding:1rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg-card);box-shadow:var(--shadow)}
-.month-btn.con-articulos{border-color:#c9a35a}.month-btn .month-name{font-weight:600;display:block}.month-btn .month-status{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
+.back-btn{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--accent);padding:.38rem .75rem;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;display:inline-block}
+.back-btn:hover{border-color:var(--gold);background:#fff9ef}
+.year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.8rem,1fr));gap:.6rem}
+.year-btn{font-family:var(--sans);font-weight:600;padding:.9rem .3rem .75rem;border-radius:12px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;display:block;text-align:center;transition:transform .15s ease,box-shadow .15s ease,border-color .15s}
+.year-btn.has-content{border-color:#d4b36a;background:linear-gradient(180deg,#fffaf0,#fffdf8);color:var(--accent-dark)}
+.year-btn.has-content:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--gold)}
+.year-btn.has-content::after{content:"";display:block;width:6px;height:6px;margin:.38rem auto 0;border-radius:50%;background:var(--accent)}
+.year-btn.muted{opacity:.42;cursor:default}
+.month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(11rem,1fr));gap:.75rem}
+.month-btn{text-align:left;padding:1.05rem 1rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg-card);box-shadow:0 4px 16px rgba(36,28,20,.04);transition:transform .15s ease,border-color .15s}
+.month-btn.con-articulos{border-color:#d4b36a}
+.month-btn.con-articulos:hover{transform:translateY(-2px);border-color:var(--gold)}
+.month-btn .month-name{font-weight:600;display:block;font-size:1.02rem}
+.month-btn .month-status{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
 .month-btn.con-articulos .month-status{color:var(--accent);font-weight:600}
-.art-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
-.art-list a{display:grid;grid-template-columns:2.2rem 1fr;gap:.7rem;padding:.9rem 1rem;border-radius:12px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit}
-.art-list .num{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600}
+.art-list{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.art-list a{display:grid;grid-template-columns:2.25rem 1fr;gap:.75rem;padding:1rem 1.05rem;border-radius:14px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}
+.art-list a:hover{border-color:var(--gold);box-shadow:var(--shadow)}
+.art-list .num{width:2.25rem;height:2.25rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600}
+.art-title{display:block;font-weight:600;color:var(--accent-dark);line-height:1.35}
+.art-author{display:block;margin-top:.28rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);font-style:italic}
+.art-author.anon{font-style:italic;opacity:.8}
 .empty-card{text-align:center;background:var(--bg-card);border:1px dashed #d2c4ae;border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
-.article-panel{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem}
-.article-header{border-bottom:1px solid var(--line);margin-bottom:1.1rem;padding-bottom:.8rem}
+.article-panel{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.65rem 1.7rem 1.4rem}
+.article-header{border-bottom:1px solid var(--line);margin-bottom:1.15rem;padding-bottom:.9rem}
 .article-meta{font-family:var(--sans);font-size:.82rem;color:var(--muted)}
-.badge{background:var(--accent);color:#fff;padding:.1rem .45rem;border-radius:999px;font-size:.75rem;font-weight:600;margin-right:.3rem}
-.article-header h2{margin:.3rem 0 0;color:var(--accent-dark);font-size:clamp(1.1rem,2.3vw,1.5rem)}
+.badge{background:var(--accent);color:#fff;padding:.12rem .5rem;border-radius:999px;font-size:.75rem;font-weight:600;margin-right:.3rem}
+.article-header h2{margin:.4rem 0 .35rem;color:var(--accent-dark);font-size:clamp(1.18rem,2.4vw,1.62rem);line-height:1.28}
+.byline{margin:0;font-family:var(--sans);font-size:.92rem;color:var(--ink-soft)}
+.byline em{font-style:italic;color:var(--muted)}
 .article-body p{margin:0 0 1rem;text-align:justify}.article-body h3{text-align:center;color:var(--accent)}
-.article-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1.2rem;padding-top:.9rem;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem}
-.site-footer{text-align:center;padding:1.2rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
-.years-intro{font-family:var(--sans);color:var(--ink-soft);font-size:.95rem}
+.article-body .verse{text-align:center;font-style:italic}
+.article-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem}
+.site-footer{text-align:center;padding:1.35rem 1rem 1.6rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);background:rgba(255,253,248,.45)}
+.years-intro{font-family:var(--sans);color:var(--ink-soft);font-size:.98rem;margin:0 0 1.1rem}
 .legend{font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+.home-actions{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1.15rem 0 0}
+.home-actions a{font-family:var(--sans);font-weight:600;text-decoration:none;padding:.55rem 1.05rem;border-radius:999px;border:1px solid var(--gold);background:linear-gradient(180deg,#fffaf0,#fff);color:var(--accent-dark)}
+.home-actions a:hover{background:#fff4dc}
+.alpha-tools{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin:0 0 1rem}
+.alpha-tools input{flex:1 1 16rem;font-family:var(--sans);font-size:.95rem;padding:.6rem .85rem;border:1px solid var(--line);border-radius:10px;background:#fff}
+.alpha-tools input:focus{outline:2px solid var(--gold-soft);border-color:var(--gold)}
+.letter-nav{display:flex;flex-wrap:wrap;gap:.28rem;margin:0 0 1.2rem}
+.letter-nav a{font-family:var(--sans);font-size:.78rem;font-weight:700;min-width:1.7rem;text-align:center;padding:.28rem .2rem;border-radius:7px;border:1px solid var(--line);background:#fff;color:var(--accent-dark);text-decoration:none}
+.letter-nav a:hover{border-color:var(--gold);background:#fff9ef}
+.letter-block{margin:0 0 1.5rem}
+.letter-block h2{margin:0 0 .55rem;color:var(--accent-dark);font-size:1.55rem;border-bottom:2px solid var(--gold-soft);padding-bottom:.2rem}
+.alpha-row{display:grid;grid-template-columns:1fr auto;gap:.4rem 1.1rem;align-items:baseline;padding:.62rem .2rem;border-bottom:1px solid rgba(224,212,192,.7);text-decoration:none;color:inherit}
+.alpha-row:hover{background:rgba(255,249,239,.7)}
+.alpha-row .t{font-weight:600;color:var(--accent-dark)}
+.alpha-row .meta{font-family:var(--sans);font-size:.8rem;color:var(--muted);text-align:right}
+.alpha-row .au{display:block;font-family:var(--sans);font-size:.8rem;font-style:italic;color:var(--ink-soft);margin-top:.12rem}
+@media(max-width:640px){.alpha-row{grid-template-columns:1fr}.alpha-row .meta{text-align:left}}
 [hidden]{display:none!important}
 </style></head><body>
+<nav class="site-nav"><div class="wrap"><span class="brand">Cristo Rey en México</span><a href="index.html">Años</a><a href="articulos.html">Índice alfabético</a></div></nav>
 <header class="hero"><div class="wrap">
-<p style="color:var(--gold);letter-spacing:.3em;font-size:.75rem;font-family:var(--sans)">✦ ARCHIVO DIGITAL ✦</p>
+<p class="kicker">✦ ARCHIVO DIGITAL ✦</p>
 <h1>Cristo Rey en México</h1>
 <p class="subtitle">Año 2009</p>
-<p class="stats-pill">1 números · 1 artículos</p>
+<p class="stats-pill">1 números · 8 artículos</p>
 </div></header>
 <div class="wrap"><nav class="breadcrumb" id="breadcrumb"></nav></div>
 <main class="wrap view">
@@ -47,44 +91,14 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <div class="panel-head"><a class="back-btn" href="index.html">← Todos los años</a>
 <h2>Año 2009</h2>
 <p class="panel-sub">Solo se muestran los números publicados (los meses agrupados aparecen juntos).</p></div>
-<div class="month-grid"><button type="button" class="month-btn con-articulos" data-month="01"><span class="month-name">Enero-Febrero</span><span class="month-status">1 artículo</span></button></div>
+<div class="month-grid"><button type="button" class="month-btn con-articulos" data-month="01"><span class="month-name">Enero-Febrero</span><span class="month-status">8 artículos</span></button></div>
 </section>
-<section id="view-articles-01" class="view-panel" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="months">← Meses de 2009</button><h2>Enero-Febrero de 2009</h2><p class="panel-sub">1 artículos</p></div><ol class="art-list"><li><a href="#/01/articulo-1" class="art-link"><span class="num">1</span><span class="art-title">Contenido completo del número</span></a></li></ol></section>
+<section id="view-articles-01" class="view-panel" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="months">← Meses de 2009</button><h2>Enero-Febrero de 2009</h2><p class="panel-sub">8 artículos</p></div><ol class="art-list"><li><a href="#/01/articulo-1" class="art-link"><span class="num">1</span><span><span class="art-title">Documento Aparecida</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-2" class="art-link"><span class="num">2</span><span><span class="art-title">Mensaje de Su Santidad Benedicto XVI en la montaña de Cristo Rey</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-3" class="art-link"><span class="num">3</span><span><span class="art-title">Homilía en la misa de la solemnidad de María, madre de Dios</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-4" class="art-link"><span class="num">4</span><span><span class="art-title">Pablo y la unidad de los cristianos</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-5" class="art-link"><span class="num">5</span><span><span class="art-title">Palabras del presidente de la CEM al inaugurar congreso de la familia</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-6" class="art-link"><span class="num">6</span><span><span class="art-title">Miércoles de Ceniza</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-7" class="art-link"><span class="num">7</span><span><span class="art-title">Mensaje del Papa Benedicto XVI para Cuaresma 2009</span><span class="art-author anon">sin autor</span></span></a></li><li><a href="#/01/articulo-8" class="art-link"><span class="num">8</span><span><span class="art-title">Peregrinaciones</span><span class="art-author anon">sin autor</span></span></a></li></ol></section>
 <div id="empty-month-view" hidden>
 <div class="panel-head"><button type="button" class="back-btn" data-back="months">← Meses</button><h2 id="empty-month-title">Mes</h2></div>
 <div class="empty-card"><h3>Sin artículos en este mes</h3><p>Está agrupado en otro número o aún no se ha cargado.</p></div></div>
-<article class="article-panel" id="article-01-1" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 1</span> Enero-Febrero de 2009 · 10703 pal.</p><h2>Contenido completo del número</h2></header><div class="article-body">
-<h3>CIRCULÓ MONITOR</h3>
-<h3>AREA CATEQUÉSTICA</h3>
-<p>padres catequistas:</p>
-<p>CONSEJOS</p>
-<p>a y A.</p>
-<p>CS PP”</p>
-<p>DA y 1: WOWAO y&quot; &quot; e: y , yA mí</p>
-<p>8 E pas a y A TAR (e 7 O ES A</p>
-<p>&#x27; | s Le dE A Le he! ») &#x27; ! | Ey A FR y E .</p>
-<p>Ú E i í A Ab | 18 NEP AE A ad OS a</p>
-<p>» : 2 = . A El &gt; Je</p>
-<p>| = qe de d 2</p>
-<p>Mm ! o E í o &gt; e | y.</p>
-<p>ue — &#x27; &#x27; A tr La Pa</p>
-<p>3 de rr &gt; P</p>
-<p>3 &#x27; « _ BE rata mor .</p>
-<p>a €. ; SS, E - —</p>
-<p>E a Mr a</p>
-<p>« :</p>
-<p>Paga Mr A</p>
-<p>A PE e ES Cooperación: $ 20.00</p>
-<p>5 Crisi montar a de</p>
-<p>Contenido. Cristo Rey 1 a www.cristorey.arquidiocesisdeleon.org 2 Doc. Aparecida e-mail: oficina@cristorey.arquidiocesisdeleon.org 3 Mensaje de Su Santidad Benedicto XVI en la montaña de Cristo Rey Organo Oficial del Monumento Votivo Nacional a Cristo Rey, Silao Gto., México. 13 Homilía en la misa de la solemnidad de María, madre de Dios 17 Pablo y la unidad de los cristianos Palabras del presidente de la CEM al inaugurar congreso de la familia 19 22 Miércoles de ceniza 23 Mensaje del Papa Benedicto XVI para Cuaresma 2009</p>
-<p>Peregrinaciones</p>
-<p>Portada: Composición Digital MN Contraportada: En la fiesta de los Reyes, Josué Aralza ante Santa Teresa de Jesús</p>
-<p>Estimados Lectores de la revista Montaña de Cristo Rey:</p>
-<p>Me dirijo a todos ustedes para entrar en comunión de oraciones, gozos y esperanzas en este año nuevo del 2009 que la Providencia Divina nos concede. En este número continuamos con las enseñanzas de Aparecida sobre las vocaciones específicas en el seguimiento de Jesús. Nos ponemos en contacto con el Santo Padre a través de su mensaje sobre la jornada mundial de la paz y su mensaje de cuaresma. Proporcionamos también la homilía de la Solemnidad de María Madre de Dios y de la Iglesia, pronunciada por nuestro Arzobispo de León, Mons. J. Guadalupe Martín Rábago el día primero del Año Nuevo.</p>
-<p>Con motivo del año paulino y el octavario sobre la Unidad de los Cristianos se ofrece un tema de san Pablo sobre la Unidad. Para estar en sintonía con el encuentro mundial de las familias en la Ciudad de México proponemos la intervención del presidente del Episcopado Mexicano, Mons. Carlos Aguiar Retes, buscando encontrar una palabra que ilumine el futuro.</p>
-<p>No podemos evitar una palabra sobre la ceniza y el sentido de la cuaresma, pues es un tiempo de gracia que Dios nos concede para experimentar su misericordia. Terminamos con algunas peregrinaciones importantes, donde sobresale la Marcha Nacional Juvenil y la visita del Nuncio Apostólico a este Monumento a Cristo Rey, dándonos la oportunidad de sentir la comunión con el Santo Padre Benedicto XVI.</p>
-<p>Que Dios bendiga a todos en este Año Nuevo.</p>
-<p>El Capellán.</p>
+<article class="article-panel" id="article-01-1" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 1</span> Enero-Febrero de 2009 · 1296 pal.</p><h2>Documento Aparecida</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 4-7) ========================================================================</h3>
 <h3>MISIÓN ESFÍNTEGO “Y CRISTO REY</h3>
 <p>JA. DOCUMENTO DE APARECIDA Continuación...</p>
 <p>Los presbíteros, discípulos misioneros de Jesús Buen Pastor</p>
@@ -111,6 +125,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>Dentro del territorio parroquial, la familia cristiana es la primera y más básica comunidad eclesial. En ella se viven y se transmiten los valores fundamentales de la vida cristiana. Se le llama “Iglesia doméstica”. Allí, los padres son los primeros transmisores de la fe a sus hijos, enseñándoles, a través del ejemplo y la palabra, a ser verdaderos discípulos misioneros. Al mismo tiempo, cuando esta experiencia de discipulado misionero es auténtica, “una familia se hace discípula y evangelizadora de muchas otras familias y del ambiente en el que ella vive”. Esto opera en la vida diaria “dentro y a través de los hechos, las dificultades y los acontecimientos de la existencia cotidiana”.</p>
 <p>El Espíritu, que todo lo hace nuevo, actúa aun dentro de situaciones irregulares en las que se realiza un proceso de transmisión de la fe. Pero hemos de reconocer que, en las actuales circunstancias, a veces este proceso se encuentra con bastantes dificultades. La parroquia no se propone llegar sólo a sujetos aislados, sino a la vida de todas las familias, para fortalecer su dimensión misionera.</p>
 <p>97. Hurtado, Alberto, un fuego que enciende otros fuegos, pp. 69-70. 98. Cf. LG 10. 99. Cf. PDV 72. 100. Ibid., 17.</p>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-2">Siguiente →</a></footer></article><article class="article-panel" id="article-01-2" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 2</span> Enero-Febrero de 2009 · 2520 pal.</p><h2>Mensaje de Su Santidad Benedicto XVI en la montaña de Cristo Rey</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 8-14) ========================================================================</h3>
 <p>Misión: “Y Jesús Rey</p>
 <p>El MENSAJE DE SU SANTIDAD</p>
 <h3>BENEDICTO XVI</h3>
@@ -150,6 +166,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>Inducir a construir una casa dorada, pero “que se ciña cada cual a la parte que le corresponde”, escribía León XIII en 1891, añadiendo: «Por lo que respecta a la Iglesia, ni bajo ningún aspecto regateará su esfuerzo» [18]. Esta convicción acompaña también hoy el quehacer de la Iglesia para con los pobres, en los cuales contempla a Cristo [19], sintiendo cómo resuena en su corazón el mandato del Príncipe de la paz a los Apóstoles: «Vosotros dadles de comer» (Le 9,13). Así pues, fiel a esta exhortación de su Señor, la comunidad cristiana no dejará de asegurar a toda la familia humana su apoyo a las iniciativas de una solidaridad creativa, no sólo para distribuir lo superfluo, sino cabiendo «sobre todo los estilos de vida» [20]. Por consiguiente, dirijo al comienzo de un año nuevo una calurosa invitación a cada discípulo de Cristo, así como a toda persona de buena voluntad, para que ensanche su corazón hacia las necesidades de los pobres, haciendo cuanto le sea concretamente posible para salir a su encuentro. En efecto, sigue siendo incontestablemente verdadero el axioma según el cual «combatir la pobreza es construir la paz».</p>
 <p>Vaticano, 8 de diciembre de 2008</p>
 <h3>BENEDICTUS PP. XVI</h3>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-3">Siguiente →</a></footer></article><article class="article-panel" id="article-01-3" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 3</span> Enero-Febrero de 2009 · 1905 pal.</p><h2>Homilía en la misa de la solemnidad de María, madre de Dios</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 15-18) ========================================================================</h3>
 <p>En la Misa de la Solemnitad del **Santo Nombre de Jesús**, MADRE DE DIOS.</p>
 <p>---</p>
 <p>&quot;El Señor te bendiga y te proteja, haga resplandecer su rostro sobre ti y te conceda su favor. Que el Señor te mire con benevolencia y te conceda la paz&quot;. Con estas palabras del libro de los Números recibimos las bendiciones de lo Alto, al comienzo de un Nuevo Año. Son las palabras con las que Moisés prescribe a Arón y a sus hijos que bendigan al pueblo de Israel.</p>
@@ -182,6 +200,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>En este día en que celebramos la solemnidad de la Maternidad divina de María Santísima, volvemos también nuestra mirada confiada a Ella. María nos dice que Jesús conserva hoy, como en el día de su nacimiento, los mismos sentimientos de entrega por nosotros, para hacerse hermano nuestro y para asumir como suyas nuestras preocupaciones y aspiraciones.</p>
 <p>¡Que el Señor los bendiga en este año que estamos iniciando y siempre!</p>
 <p>León, 1 de enero del 2009. José G. Martín Rábago Arzobispo de León</p>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-4">Siguiente →</a></footer></article><article class="article-panel" id="article-01-4" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 4</span> Enero-Febrero de 2009 · 672 pal.</p><h2>Pablo y la unidad de los cristianos</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 19-20) ========================================================================</h3>
 <p>En Cristo Rey nº 19</p>
 <p>---</p>
 <p>Gracias a Dios porque, al inicio de mi ministerio como sucesor de Pedro, me concede detenerme a orar en el sepulcro del Apóstol Pablo. Para mí este es un peregrinaje muy deseado, un gesto de fe que realizo en mi nombre, pero también en la diócesis de Roma, de la cual el Señor me ha constituido obispo y pastor, y la Iglesia universal confiada a mis premuras pastorales. Un peregrinaje, por así decirlo, a las raíces de la misión, de aquella misión que Cristo resucitado confía a Pedro, a los apóstoles y, de manera singular, también a Pablo, empujándolo a anunciar el evangelio a los gentiles, hasta llegar a esta ciudad, donde, después de una larga predicación del Reino de Dios (cf. Hech 28,31), dio con su sangre, el extremo testimonio de su Señor, que lo había “Conquistado” (Flp 4,23) y enviado.</p>
@@ -192,6 +212,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>La Iglesia es misionera por naturaleza; su deber primario es la evangelización. El Concilio Ecuménico Vaticano II ha dedicado a la actividad misionera el Decreto denominado “Ad gentes”, que recuerda cómo “los apóstoles... siguiendo el ejemplo de Cristo, predicaron la palabra de la verdad y generaron las Iglesias” (S. Aug., Enarrin Ps 44,23: PL 36,508) y que “es deber de sus sucesores continuar con esta obra, para que ‘la palabra del Señor se propague rápidamente y sea glorificada como lo es entre ustedes’ (2 Te 3,1) y el Reino de Dios sea anunciado y establecido en toda la tierra” (n. 1).</p>
 <p>Al inicio del tercer milenio, la Iglesia siente con renovada vivacidad que el mandato misionero de Cristo es más actual que nunca. El gran jubileo del 2000 la ha llevado a “volver a partir y de Cristo”, contemplando en la oración para que la luz de su verdad sea irradiada a todos los hombres, ante todo con el testimonio de la santidad.</p>
 <p>Me es grato recordar aquí esas palabras que san Benito puso en “Regla” exhortando a sus monjes a “no anteponer absolutamente nada al amor de Cristo” (cap. 4). En efecto, la vocación en el camino a Damasco llevó a Pablo justamente a esto: a hacer de Cristo el centro de su vida, dejando todo por la sublimidad del conocimiento de Cristo y de su misterio de amor, y empeñándose luego en anunciarlo a todos, especialmente a los paganos, “a gloria de su nombre” (Rom 1,5). La pasión por Cristo lo llevó a predicar el Evangelio no sólo con la palabra, sino con la misma vida, cada vez más conforme a su Señor. Al final, Pablo anunció a Cristo con el martirio y su sangre junto con la de Pedro y la de tantos otros testigos del Evangelio.</p>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-5">Siguiente →</a></footer></article><article class="article-panel" id="article-01-5" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 5</span> Enero-Febrero de 2009 · 768 pal.</p><h2>Palabras del presidente de la CEM al inaugurar congreso de la familia</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 21-23) ========================================================================</h3>
 <p>Cristo Rey e Lo: CIUDAD DE MÉXICO, miércoles, 14 de enero de 2009</p>
 <p>Saludo cordialmente al Señor presidente de la República Mexicana, el licenciado Felipe Calderón Hinojosa; y a su querida esposa, Margarita Zavala. Bienvenidos.</p>
 <p>Saludo también al señor Cardenal Ennio Antonelli, Presidente del Consejo pontificio para las Familias.</p>
@@ -215,6 +237,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>Por ello, la Conferencia Episcopal Mexicana agradece al Santo Padre, Benedicto XVI, quien se hará presente por medio de videomensajes del legado Pontificio, y al Eminentísimo señor Cardenal Tarcisio Bertone, Secretario del Estado de Su Santidad. Agradecemos al Santo Padre que haya decidido la celebración de este VI Encuentro en México.</p>
 <p>Asimismo, estamos muy agradecidos con el Cardenal Norberto Rivera Carrera, Arzobispo Primado de México, quien ha sido un apoyo constante y una guía espiritual para todos nosotros. Sean bienvenidos, en nombre del Señor Jesús, por los obispos de México.</p>
 <p>Muchas gracias.</p>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-6">Siguiente →</a></footer></article><article class="article-panel" id="article-01-6" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 6</span> Enero-Febrero de 2009 · 1488 pal.</p><h2>Miércoles de Ceniza</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 24-27) ========================================================================</h3>
 <p>- pu. E. O Cristo Rey TIEMPO CUARESMAL</p>
 <p>Con el rito de la imposición de la ceniza, la Iglesia comienza el Santo tiempo de Cuaresma, aunque este rito penitencial no obliga bajo pecado mortal; sin embargo, es un signo de conversión para quien lo recibe y para toda la comunidad cristiana.</p>
 <p>Los fieles cristianos que reciben este signo con arrepentimiento y actitud de conversión quieren prepararse durante todo este tiempo de cuaresma a celebrar y vivir el Misterio Pascual de Cristo.</p>
@@ -238,6 +262,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>Con este deseo, asegurando mis oraciones para que cada creyente y cada comunidad eclesial recorran un provechoso itinerario cuaresmal, os imparto de corazón a todos la Bendición Apostólica.</p>
 <p>Vaticano, 11 de diciembre de 2008</p>
 <h3>BENEDICTUS PP. AVI</h3>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-7">Siguiente →</a></footer></article><article class="article-panel" id="article-01-7" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 7</span> Enero-Febrero de 2009 · 1190 pal.</p><h2>Mensaje del Papa Benedicto XVI para Cuaresma 2009</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 28-31) ========================================================================</h3>
 <h3>6 DE ENERO, FIESTA DE MANIFESTACIÓN DEL SEÑOR</h3>
 <p>La fiesta de la manifestación del Señor, que se celebra los días 5 y 6 de enero, es conocida popularmente como Fiesta de los Reyes Magos. En la Montaña de Cristo Rey desde 1956 se le llama Cabalgata de Reyes a Cristo Rey.</p>
 <p>En el presente año, un gran número de cabalgadores manifestaron su fe y rindieron adoración al Dios niño. El día 5 de enero llegaron al poblado de Baños de Aguas Buenas para esperar el carro alegórico y comenzar su peregrinación acompañando al Santísimo Sacramento. Durante la peregrinación de ascenso a la Montaña, le rindieron su homenaje con cantos, reverencias y el rezo del Rosario.</p>
@@ -270,6 +296,8 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 <p>Desde la Montaña de Cristo Rey los padres capellanes, las religiosas y todas las personas que sirven en este Santuario piden a Dios por Mons. Víctor Sánchez Espinosa quien fue nombrado como nuevo Arzobispo de la Arquidiócesis de Puebla. Le piden que le llene de fe viva, esperanza activa y de caridad pastoral para que desempeñe su ministerio como nuevo Arzobispo de esa importante porción del pueblo de Dios y esperamos que el Espíritu Santo lo fortalezca siempre.</p>
 <p>Y le pedimos también a nuestra Señora de Guadalupe que lo asista con su maternal protección, pues Mons. Víctor Sánchez Espinosa según su intención “volverá confiar su ministerio episcopal a la Virgen de Guadalupe y adelantó que conservará el lema episcopal bajo su escudo pastoral: Subtum praesidium (bajo tu amparo), pues considera que la morenita del Tepeyac siempre le ha acompañado en su servicio pastoral.</p>
 <p>El Con mucho respeto le pedimos que algún día visite con sus fieles este alcázar del Rey en el antiguo cerro del Cubilete.</p>
+</div><footer class="article-footer"><a href="#/01">↑ Lista</a><a class="nav-next" href="#/01/articulo-8">Siguiente →</a></footer></article><article class="article-panel" id="article-01-8" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="01">← Enero-Febrero 2009</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 8</span> Enero-Febrero de 2009 · 399 pal.</p><h2>Peregrinaciones</h2><p class="byline"><em>sin autor</em></p></header><div class="article-body">
+<h3>(OCR 32-34) ========================================================================</h3>
 <p>hal _— Ñ P ab ES a. : o rg ha * J de . _ pa, ; cia a MA Je Z e | A [&gt;] f yA p Ta , , &#x27; &gt; : A az if , PA | Mo HR ¿ AA O e Ni a &gt;. dl Eo E em . ) 1 Md pa gr &#x27; . | y a , y N y , E e QU a he SN E | E YA h De a. , &gt; » E o OR &gt; pr = oi Oo. A</p>
 <p>C — La montaña de Datos Editoriales.</p>
 <p>Datos Editoriales. Director: Registrada en la Sra. De Patrimonio y Fomento Industrial: Excmo. Y Revmo. Sr. Dr. D. José Guadalupe Martín Rábago, 7 de febrero de 1983 Expediente: 212332.</p>
@@ -298,7 +326,7 @@ a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:
 (function(){
 const YEAR=2009;
 const M=new Set(["01"]);
-const N={"01":"Enero", "02":"Febrero", "03":"Marzo", "04":"Abril", "05":"Mayo", "06":"Junio", "07":"Julio", "08":"Agosto", "09":"Septiembre", "10":"Octubre", "11":"Noviembre", "12":"Diciembre"};
+const N={"01":"Enero", "02":"Febrero", "03":"Marzo", "04":"Abril", "05":"Mayo", "06":"Junio", "07":"Julio", "08":"Agosto", "09":"Septiembre", "10":"Octubre", "11":"Noviembre", "12":"Diciembre", "es":"Edición especial"};
 const MONTHS=document.getElementById("view-months");
 const E=document.getElementById("empty-month-view");
 const B=document.getElementById("breadcrumb");
