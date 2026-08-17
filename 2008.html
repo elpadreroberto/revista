@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cristo Rey en México — 2008</title>
+<style>
+:root{--bg:#f6f1e8;--bg-card:#fffdf8;--ink:#1f1a14;--ink-soft:#4a4035;--muted:#7a6d5c;--accent:#8b1e1e;--accent-dark:#5c1212;--gold:#b08d3e;--gold-soft:#e8d5a3;--line:#e0d4c0;--shadow:0 10px 40px rgba(31,26,20,.08);--radius:14px;--serif:"Palatino Linotype",Palatino,Georgia,serif;--sans:"Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--serif);color:var(--ink);line-height:1.65;min-height:100vh;background:radial-gradient(ellipse at top,#fff9ef,transparent 50%),linear-gradient(180deg,#efe6d6,var(--bg) 30%,#f3ebe0)}
+a{color:var(--accent)}button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}.wrap{width:min(980px,calc(100% - 2rem));margin:0 auto}
+.hero{text-align:center;padding:2.4rem 0 1.6rem;border-bottom:1px solid var(--line)}.hero h1{margin:0;color:var(--accent-dark);font-size:clamp(1.7rem,4vw,2.4rem)}
+.hero .subtitle{color:var(--ink-soft)}.stats-pill{display:inline-block;margin-top:.8rem;padding:.4rem .9rem;border-radius:999px;border:1px solid var(--gold-soft);font-family:var(--sans);font-size:.82rem;color:var(--accent-dark);background:rgba(255,255,255,.55)}
+.breadcrumb{font-family:var(--sans);font-size:.85rem;color:var(--muted);padding:1rem 0 0}.breadcrumb a{text-decoration:none;font-weight:500}.breadcrumb .sep{margin:0 .35rem;opacity:.5}
+.view{padding:1.2rem 0 3rem}.panel-head{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;margin-bottom:1.1rem}.panel-head h2{margin:0;color:var(--accent-dark)}
+.panel-sub{width:100%;margin:0;font-family:var(--sans);font-size:.9rem;color:var(--muted)}
+.back-btn{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--accent);padding:.35rem .65rem;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;display:inline-block}
+.year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr));gap:.55rem}
+.year-btn{font-family:var(--sans);font-weight:600;padding:.85rem .3rem;border-radius:10px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit;display:block;text-align:center}
+.year-btn.has-content{border-color:#c9a35a;background:linear-gradient(180deg,#fff9ef,#fffdf8);color:var(--accent-dark)}
+.year-btn.has-content::after{content:"";display:block;width:6px;height:6px;margin:.35rem auto 0;border-radius:50%;background:var(--accent)}
+.year-btn.muted{opacity:.55;cursor:default}
+.month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.7rem}
+.month-btn{text-align:left;padding:1rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg-card);box-shadow:var(--shadow)}
+.month-btn.con-articulos{border-color:#c9a35a}.month-btn .month-name{font-weight:600;display:block}.month-btn .month-status{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
+.month-btn.con-articulos .month-status{color:var(--accent);font-weight:600}
+.art-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
+.art-list a{display:grid;grid-template-columns:2.2rem 1fr;gap:.7rem;padding:.9rem 1rem;border-radius:12px;border:1px solid var(--line);background:var(--bg-card);text-decoration:none;color:inherit}
+.art-list .num{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600}
+.empty-card{text-align:center;background:var(--bg-card);border:1px dashed #d2c4ae;border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+.article-panel{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem}
+.article-header{border-bottom:1px solid var(--line);margin-bottom:1.1rem;padding-bottom:.8rem}
+.article-meta{font-family:var(--sans);font-size:.82rem;color:var(--muted)}
+.badge{background:var(--accent);color:#fff;padding:.1rem .45rem;border-radius:999px;font-size:.75rem;font-weight:600;margin-right:.3rem}
+.article-header h2{margin:.3rem 0 0;color:var(--accent-dark);font-size:clamp(1.1rem,2.3vw,1.5rem)}
+.article-body p{margin:0 0 1rem;text-align:justify}.article-body h3{text-align:center;color:var(--accent)}
+.article-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1.2rem;padding-top:.9rem;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem}
+.site-footer{text-align:center;padding:1.2rem;font-family:var(--sans);font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
+.years-intro{font-family:var(--sans);color:var(--ink-soft);font-size:.95rem}
+.legend{font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+[hidden]{display:none!important}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<p style="color:var(--gold);letter-spacing:.3em;font-size:.75rem;font-family:var(--sans)">✦ ARCHIVO DIGITAL ✦</p>
+<h1>Cristo Rey en México</h1>
+<p class="subtitle">Año 2008</p>
+<p class="stats-pill">2 números · 2 artículos</p>
+</div></header>
+<div class="wrap"><nav class="breadcrumb" id="breadcrumb"></nav></div>
+<main class="wrap view">
+<section id="view-months">
+<div class="panel-head"><a class="back-btn" href="index.html">← Todos los años</a>
+<h2>Año 2008</h2>
+<p class="panel-sub">Solo se muestran los números publicados (los meses agrupados aparecen juntos).</p></div>
+<div class="month-grid"><button type="button" class="month-btn con-articulos" data-month="05"><span class="month-name">Mayo-Junio</span><span class="month-status">1 artículo</span></button><button type="button" class="month-btn con-articulos" data-month="11"><span class="month-name">Noviembre-Diciembre</span><span class="month-status">1 artículo</span></button></div>
+</section>
+<section id="view-articles-05" class="view-panel" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="months">← Meses de 2008</button><h2>Mayo-Junio de 2008</h2><p class="panel-sub">1 artículos</p></div><ol class="art-list"><li><a href="#/05/articulo-1" class="art-link"><span class="num">1</span><span class="art-title">Contenido completo del número</span></a></li></ol></section><section id="view-articles-11" class="view-panel" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="months">← Meses de 2008</button><h2>Noviembre-Diciembre de 2008</h2><p class="panel-sub">1 artículos</p></div><ol class="art-list"><li><a href="#/11/articulo-1" class="art-link"><span class="num">1</span><span class="art-title">Contenido completo del número</span></a></li></ol></section>
+<div id="empty-month-view" hidden>
+<div class="panel-head"><button type="button" class="back-btn" data-back="months">← Meses</button><h2 id="empty-month-title">Mes</h2></div>
+<div class="empty-card"><h3>Sin artículos en este mes</h3><p>Está agrupado en otro número o aún no se ha cargado.</p></div></div>
+<article class="article-panel" id="article-05-1" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="05">← Mayo-Junio 2008</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 1</span> Mayo-Junio de 2008 · 9860 pal.</p><h2>Contenido completo del número</h2></header><div class="article-body">
+<p>(0 QA ¡Rey A bl a” Y Á $ dá e e ed | + +” » &gt; A E &#x27; A h ; J a / a SS ( S A T SN 8 pas pi » peración: +</p>
+<p>Contenido</p>
+<p>Introducción Discípulos Misioneros</p>
+<p>Pentecostés SAGRADO CORAZÓN DE JESÚS COMPOSICIÓN Hoja de Benedicto XVI</p>
+<p>Poesía a la Santísima Eucaristía</p>
+<p>Solidaridad Espiritual</p>
+<p>El Sagrado Corazón de Jesús HIMNO AL SAGRADO CORAZÓN DE JESÚS</p>
+<p>Hora Santa de Expiación</p>
+<p>Felicitaciones</p>
+<p>Peregrinaciones</p>
+<p>www.cristorey.arquidiocesisdeleon.org e-mail: oficina@cristorey.arquidiocesisdeleon.org</p>
+<p>“la montaña de Cristo Rey”</p>
+<p>Organo Oficial del Monumento Votivo Nacional a Cristo Rey, Silao Gto. México.</p>
+<p>Cel. 477-171-38-32</p>
+<p>www.josuearaiza.com</p>
+<p>Introducción</p>
+<p>Estimados lectores de la Revista Cristo Rey, les pedimos a Dios que estos meses de mayo y junio, por su tinte religioso cristológico mariano, nos lleven a renovar nuestra fe y amor a Santa María Virgen y a Cristo nuestro Redentor en su presencia más eminente en el Sacramento de la Eucaristía, desde donde gobierna regiamente a su Iglesia.</p>
+<p>En este número proponemos el texto de una Hora Santa Expiatoria para Capítulo 5 del documento de Aparecida, para instruirnos y vivir la comunión en la Iglesia como discípulos misioneros. Queremos alentar a los adoradores nocturnos que especialmente el presente número de la revista está dedicado a Jesucristo Nuestro Señor por las Solemnidades del Corpus Christi y del Sagrado Corazón de Jesús, con motivo de la temática eucarística. Con el interés de profundizar en el amor misericordioso de Jesucristo hacia nosotros que nos dice: “Honran la imagen de mi corazón”.</p>
+<p>Felicitamos al nuevo Sr. Obispo de San Juan de Lagos y le deseamos un eficaz ministerio Episcopal.</p>
+<p>El Capellán</p>
+<p>Cristo Rey</p>
+<h3>LA COMUNIÓN DE LOS SANTOS</h3>
+<h3>SEGUNDA PARTE DISCIPULOS MISIONEROS</h3>
+<p>Capítulo 5 EN LA IGLESIA</p>
+<p>160. La Iglesia peregrina vive anticipadamente la belleza del amor, que se realizará al final de los tiempos en la perfecta comunión con Dios y los hombres”. Su riqueza consiste en vivir ya en este tiempo la “comunión de los santos”, es decir, la comunión en los bienes divinos entre todos los miembros de la Iglesia, en particular entre los que peregrinan y los que ya gozan de la gloria”. Constatamos que, en nuestra Iglesia, existen numerosos católicos que expresan su fe y su pertenencia de forma esporádica, especialmente a través de la piedad a Jesucristo, la Virgen y su devoción a los santos. Los invitamos a profundizar su fe y a participar más plenamente en la vida de la Iglesia, recordándoles que “en virtud del bautismo, están llamados a ser discípulos y misioneros de Jesucristo”.</p>
+<p>161. La Iglesia es comunión en el amor. Esta es su esencia y el signo por el cual está llamada a ser reconocida como seguidora de Cristo y servidora de la humanidad. El nuevo mandamiento es lo que une a los discípulos entre sí, reconociéndose como hermanos y hermanas, obedientes al Cristo Rey.</p>
+<p>162. La diversidad de carismas, ministerios y servicios, abre el horizonte para el ejercicio cotidiano de la comunión, a través de la cual los dones del Espíritu son puestos a disposición de los demás para que circule la caridad (cf. 1 Cor 12, 4-12). Cada bautizado, en efecto, es portador de dones que debe desarrollar en unidad y complementariedad con los de los otros, a fin de formar el único Cuerpo de Cristo, entregado para la vida del mundo. El reconocimiento práctico de la unidad orgánica y la diversidad de funciones asegurará mayor vitalidad misionera y será signo e instrumento de reconciliación y paz para nuestros pueblos. Cada comunidad está llamada a descubrir e integrar los talentos escondidos y silenciosos que el Espíritu regala a los fieles.</p>
+<p>163. En el pueblo de Dios, “la comunión y la misión están profundamente unidas entre sí. La comunión es misionera y la misión es para la comunión”. En las iglesias particulares, todos los miembros del pueblo de Dios, según sus vocaciones específicas, estamos convocados a la santidad en la comunión y la misión.</p>
+<p>Continuará...</p>
+<p>Ven, Espíritu Santo, hiciste que el Verbo tomara carne; realiza en nosotros por la gracia lo mismo que realizaste en Ella. Ven, Espíritu Santo, obra de la naturaleza divina, que venga la unión del Padre, Hijo y Espíritu Santo, el beneplácito del Verbo. Oh, el de los pensamientos castos, eres el premio de los santos, ás cúmulo de toda pureza, el refrigerio de las almas, la luz de las tinieblas, la riqueza de los pobres, el tesoro de los amantes, la hartura de los hambrientos, el consuelo de los peregrinos; eres, por fin, aquel en el que se contienen todos los tesoros. Ven, Tú, que descendiendo sobre María, Iglesia, recibir la efusión del Espíritu Santo, Pascua y Pentecostés es para la Iglesia la solemnidad de Pentecostés.</p>
+<p>Las revelaciones y La prueba, Santa María Magdalena de Pazzi.</p>
+<p>Santo que viene a hacer efectiva la renovación redentora realizada por Jesucristo nuestro Rey y Señor mediante su Misterio Pascual. El Espíritu Santo es el Alma de la Iglesia, es su principio dinamizador, la Iglesia con la fuerza del Espíritu debe cumplir con el mandato de Cristo: “Vayan por todo el mundo y prediquen el Evangelio a toda criatura” (cf. Mc 16,15). Y como dice San Pablo, ¿quién anunciará el Evangelio si nadie es enviado? Pero nosotros agradecemos a Dios que en muchas Diócesis del mundo donde está presente la Iglesia se realizan ordenaciones Diaconales y Sacerdotales para que siga habiendo en la Iglesia quien anuncie el Evangelio y así se cumpla el mandato de Jesús.</p>
+<p>En nuestra Arquidiócesis de León agradecemos la Divina Providencia que Dios nos ha mostrado al regalarnos el día 11 de mayo con motivo de la solemnidad de Pentecostés, 14 nuevos Sacerdotes y 2 Diáconos, durante una emotiva ceremonia que se celebró en el Seminario Mayor Arquidiocesano, en un tiempo de 3 horas.</p>
+<p>Algunos pensamientos de la homilía que dirigió el Sr. Arzobispo J. Guadalupe Martín Rábago:</p>
+<p>“Cualquier retroceso al ministerio Sacerdotal es una infidelidad a la Iglesia, es una traición”.</p>
+<p>El Sr. Arzobispo les pidió: “No defrauden al pueblo de Dios que ha puesto su esperanza en ustedes... Tengan consciencia de lo que aceptan y lo que rechazan y no defrauden al pueblo que ha puesto su esperanza... Y los exhortó a vivir siempre con el don de la perseverancia, a ser sacerdotes fieles y tener una vida diaria de coherencia”.</p>
+<p>Dijo también: “Pentecostés es la fiesta del nacimiento de la Iglesia que debe salir a expandirse, a salir a misión a todos los pueblos... Se requieren nuevos Pentecostés, a pesar de que soplen vientos de confusión”.</p>
+<p>Como vemos, el Sr. Arzobispo señaló muy bien el compromiso que obtienen los nuevos Sacerdotes.</p>
+<p>Nombres de los nuevos Sacerdotes: - Alcantar Gómez, Marco Polo López Martínez - Francisco Javier Bueno Lázaro, Víctor Manuel González Guerrero - Jorge Avalos Espinosa, Juan Ignacio Arias Durán - Bernardo Rocha Flores, Jesús Manuel Hernández Martínez - Ismael Hernández Ramírez</p>
+<p>Nombres de los diáconos que servirán en la Arquidiócesis de Cristo Rey y de la Madre Santísima de la Luz: - Rubén Alberto Obregón Hernández - Oscar Villa González</p>
+<p>Todos ellos asistieron a los ejercicios espirituales como preparación inmediata a su ordenación, en la Montaña de Cristo Rey.</p>
+<p>Le pedimos a Dios que los sostenga en su santo servicio y que la Virgencita del Seminario sea siempre su protectora e intercesora para que su ministerio los lleve por el camino a la Santidad.</p>
+<p>En la Montaña de Cristo Rey, la fiesta del CORPUS CHRISTI es celebrada por los diversos grupos de comerciantes y trabajadores en las obras de mantenimiento del Monumento dedicado a la Realeza de Cristo.</p>
+<p>La procesión recorre las casetas comerciales; el SANTÍSIMO SACRAMENTO pasa bendiciendo todos estos lugares con su presencia, es el Emmanuel que nos acompaña y camina con nosotros. Llegada la peregrinación al recinto Sagrado del Santuario, se culmina con la celebración Eucarística, la cual fue presidida por el Padre Gerardo Chagoya Gómez.</p>
+<p>A fines del siglo XIII surgió en Lieja, Bélgica un Movimiento Eucarístico cuyo centro fue la Abadía de Cornillos fundada en 1124 por el Obispo Albero de Lieja. Este movimiento dio origen a varias costumbres eucarísticas, como por ejemplo la Exposición y Bendición con el Santísimo Sacramento, el uso de las campanillas durante la elevación en la Misa y la fiesta del Corpus Christi.</p>
+<p>Santa Juliana de Mont Cornillón, por aquellos años priora de la Abadía, fue la enviada de Dios para propiciar esta Fiesta. La santa nace en Retines cerca de Liége, Bélgica en 1193. Quedó huérfana muy pequeña y fue educada por las monjas Agustinas en Mont Cornillón. Cuando creció, hizo su profesión religiosa y más tarde fue superiora de su comunidad. Murió el 5 de abril de 1258, en la casa de las monjas Cistercienses en Fosses y fue enterrada en Villiers.</p>
+<p>Cristo Rey (2)</p>
+<p>Desde joven, Santa Juliana tuvo una gran veneración al Santísimo Sacramento. Y siempre anhelaba que se tuviera una fiesta especial en su honor. Este deseo se dice haber intensificado por una visión que tuvo de la Iglesia bajo la apariencia de luna llena con una mancha negra, que significaba la ausencia de esta solemnidad.</p>
+<p>Juliana comunicó estas apariciones a Mons. Roberto de Thorete, el entonces Obispo de Lieja, también al docto Dominico Hugh, tarde cardenal legado de los Países Bajos y a Jacques Pantaleón, en este tiempo archidiácono de Lieja, más tarde Papa Urbano IV.</p>
+<p>El obispo Roberto se impresionó favorablemente y, como en ese tiempo tenía la corte en Orvieto, ordenó que un sínodo se celebrara en 1246 y ordenó que la celebración se tuviera el año entrante; al mismo tiempo el Papa decretó que un monje de nombre Juan escribiera el oficio para esa ocasión. El decreto está preservado en Binterim (Denkwürdigkeiten, V.l. 276), junto con algunas partes del oficio.</p>
+<p>Mons. Roberto no vivió para ver la realización de su orden, ya que murió el 16 de octubre de 1246, pero la fiesta se celebró por primera vez al año siguiente, el jueves posterior a la fiesta de la Santísima Trinidad. Más tarde un obispo alemán conoció la costumbre y la extendió por toda la actual Alemania.</p>
+<p>poco al norte de Roma. Muy cerca de esta localidad se encuentra Bolsena: donde en 1263 o 1264 se produjo el milagro de Bolsena: un sacerdote que celebraba la Santa Misa tuvo dudas de que la consagración fuera algo real. Al momento de partir Sagrada Forma, vio salir de ella sangre, de la que se fue empapando en seguida el corporal. La venerada reliquia fue llevada en una procesión a Orvieto el 19 de junio de 1264.</p>
+<p>Hoy se conservan los corporales donde se apoyan los vasos sagrados, el cáliz y la patena durante la Misa, en Orvieto, y también se puede ver la piedra del altar en Bolsena, manchada de sangre. La fiesta fue aceptada en Colonia en 1306; en Würzburg la adoptaron en 1315; en Strasburgo en 1316. En Inglaterra fue introducida en 1318.</p>
+<p>El Santo Padre, movido por el prodigio y a petición de varios obispos, hace que se extienda la fiesta del Corpus Christi a toda la Iglesia por medio de la bula &quot;Transiturus&quot; del 8 de septiembre del mismo año, fijándola para el Jueves después de la octava de Pentecostés y otorgando muchas indulgencias a todos los fieles que asistieran a la Santa Misa y al oficio.</p>
+<p>Luego, según algunos biógrafos, el Papa Urbano IV encargó un oficio —la liturgia de las horas— a San Buenaventura y a Santo Tomás de Aquino; cuando el Pontífice comenzó a leer en voz alta el oficio hecho por Santo Tomás, San Buenaventura fue rompiendo el suyo en pedazos.</p>
+<p>La muerte del Papa Urbano IV (el 2 de octubre de 1264), un poco después de la publicación del decreto, obstaculizó que se difundiera la fiesta. Pero el Papa Clemente V tomó el asunto en sus manos y, en el concilio general de Viena (1311), ordenó una vez más la adopción de esta fiesta. En 1317 se promulga una recopilación de leyes —por Juan XXII— y así se extiende la fiesta a toda la Iglesia.</p>
+<p>Ninguno de los decretos habló del aspecto procesional con el Santísimo como motivo central, sin embargo estas procesiones fueron dotadas de indulgencias por los Papas Martín V y Eugenio IV, y se hicieron bastante comunes a partir del siglo XIV.</p>
+<p>Bélgica entre 1320 y 1325. En la Iglesia de Dios, la costumbre, que todos los años determinado día festivo, se celebre este excelso y venerable sacramento con singular veneración y solemnidad; y reverente y honoríficamente sea llevado en procesión por las calles y lugares públicos. En esto los cristianos atestiguan su gratitud y recuerdo por tan inefable y verdaderamente divino beneficio, por el que se hace nuevamente presente la victoria y triunfo de la muerte y resurrección de Nuestro Señor Jesucristo.</p>
+<p>En Estados Unidos y en otros países la solemnidad se celebra el domingo después del domingo de la Santísima Trinidad.</p>
+<p>En la Iglesia griega la fiesta de Corpus Christi es conocida en los calendarios de los sirios, armenios, coptos, melquitas y rutinios de Galicia, Calabria y Sicilia.</p>
+<p>Finalmente, el concilio de Trento declara que muy piadosa y religiosamente fue introducida en la Iglesia esta fiesta.</p>
+<p>ROMA, Jueves, 22 Mayo 2008</p>
+<p>(ZENIT.org).- Publicamos la homilía que pronunció Benedicto XVI en la tarde de este jueves, solemnidad del Corpus Christi, al presidir la celebración eucarística en la plaza de la Basílica de San Juan de Letrán.</p>
+<p>Queridos hermanos y hermanas:</p>
+<p>Tras el tiempo fuerte del año litúrgico que centrándose en la Pascua se extiende durante tres meses —primero los cuarenta días de la Cuaresma, después los cincuenta días del Tiempo Pascual—, la liturgia nos permite celebrar tres fiestas que tienen un carácter &quot;sintético&quot;: Santísima Trinidad, Corpus Christi y Cristo Rey.</p>
+<p>¿Cuál es el significado de la solemnidad de hoy, del Cuerpo y la Sangre de Cristo? Nos lo explica la misma celebración que estamos realizando, con el desarrollo de sus gestos fundamentales: ante todo, nos reunimos alrededor del Señor para estar juntos en su presencia; en segundo lugar, tendrá lugar la procesión, es decir, caminar con el Señor; por último, vendrá el arrodillarse ante el Señor, la adoración que comienza ya en la misa y acompaña toda la procesión, pero que culmina en el momento final de la bendición eucarística, cuando todos...</p>
+<p>nos postraremos ante Aquél que se ha agachado hasta nosotros y ha dado la vida por nosotros.</p>
+<p>Analicemos brevemente estas tres actitudes para que sean realmente expresión de nuestra fe y de nuestra vida.</p>
+<p>Reunirse en la presencia del Señor no puede ser nunca un hecho privado, reservado a personas escogidas según afinidades o amistad. La Eucaristía es un culto público, que no tiene nada de esotérico, de exclusivo. En esta tarde, no hemos decidido con quién queríamos reunirnos, hemos venido y nos encontramos unos junto a otros, reunidos por la fe y llamados a convertirnos en un único cuerpo, compartiendo el único Pan que es Cristo. Estamos unidos más allá de nuestras diferencias de nacionalidad, de profesión, de clase social, de ideas políticas: nos abrimos los unos a los otros para convertirnos en una sola cosa a partir de Él. Esta ha sido desde los inicios la característica del cristianismo, realizada visiblemente alrededor de la Eucaristía, y es necesario velar siempre para que las tentaciones del particularismo, aunque sea de buena fe, no vayan en el sentido opuesto.</p>
+<p>Pasa por la mente otra famosa expresión de Pablo: &quot;ya no hay judío ni griego; ni esclavo ni libre; ni hombre ni mujer, ya que todos vosotros sois uno en Cristo Jesús&quot; (Gálatas 3,28).</p>
+<p>bz 7-7 TRI W _ _ _ «&lt;&lt; mpeg: Bea</p>
+<p>Caminar con el Señor: “El hombre vive de todo lo que sale de la boca del Señor” (Deuteronomio 8,3)</p>
+<p>El segundo aspecto constitutivo es una afirmación universal, que se refiere a cada hombre en cuanto tal. Cada uno puede encontrar su propio camino si encuentra a Aquél que es Palabra y Pan de vida y se deja guiar por Su amigable presencia. Sin el Dios-con-nosotros, ¿cómo podemos afrontar la peregrinación de la existencia, ya sea individualmente o como sociedad y familia de los pueblos?</p>
+<p>Con el don de sí mismo en la Eucaristía, el Señor Jesús nos libera de nuestras “parálisis”, nos vuelve a levantar y nos hace “proceder”, nos hace dar un paso adelante, y luego otro, y de este modo nos pone en camino con la fuerza de este Pan de vida. Como le sucedió al profeta Elías, que se había refugiado en el desierto por miedo a sus enemigos y había decidido dejarse morir (Cf. 1 Reyes 19,1-4). Pero Dios le despertó y le puso a Su lado una torta recién cocida: “Levántate y come —le dijo—, porque el camino es demasiado largo para ti” (1 Reyes 19,5.7).</p>
+<p>La procesión del Corpus Christi nos enseña que la Eucaristía nos quiere liberar de todo abatimiento y desconsuelo, quiere volver a levantarnos para que podamos retomar el camino con la fuerza que Dios nos da a través de Jesucristo. Es la experiencia del pueblo de Israel en el éxodo de Egipto, la larga peregrinación a través del desierto, de la que nos ha hablado la primera lectura. Una experiencia que para Israel es constitutiva, pero que para toda la humanidad resulta ejemplar.</p>
+<p>De hecho, la expresión “no sólo de pan vive el hombre, sino que el Señor da la palabra que sana” (Salmo 106 [105], 18) nos recuerda que la Eucaristía es el sacramento del Dios que no nos deja solos en el camino, sino que se pone a nuestro lado y nos indica la dirección.</p>
+<p>hecho, ¡no es suficiente avanzar, es arrodillarse en adoración ante el Señor! No basta el &quot;progreso&quot;, sino que se necesita ver hacia dónde se va. Al llegar a este momento no es posible de dejar de pensar en el inicio del &quot;decálogo&quot;, los diez mandamientos, en donde está escrito: &quot;Yo, el Señor, soy tu Dios, que te he sacado del país de Egipto, de la casa de servidumbre. No habrá para ti otros dioses delante de mí&quot; (Exodo 20, 2-3). Encontramos aquí el tercer mandamiento.</p>
+<p>Tu Padre celestial ha hecho él mismo &quot;camino&quot; y ha venido a caminar junto a nosotros para que nuestra libertad tenga el criterio para discernir el camino justo y recorrerlo.</p>
+<p>elemento constitutivo del Corpus Christi: arrodillarse en adoración transforma.</p>
+<p>ante el Señor. Adorar al Dios de</p>
+<p>Jesucristo, que se hizo pan partido por amor, es el remedio más válido y radical contra las idolatrías de ayer y hoy. Arrodillarse ante la Eucaristía es una profesión de libertad: quien se inclina ante Jesús no puede ni debe postrarse ante ningún poder terreno, por más fuerte que sea.</p>
+<p>Nosotros, los cristianos, nos postramos ante el santísimo Sacramento, porque en él sabemos y creemos que está presente el único Dios verdadero, que ha creado el mundo y lo ha amado hasta el punto de entregar a su unigénito Hijo (Cf. Juan 3, 16).</p>
+<p>Nos postramos ante un Dios que se ha abajado en primer lugar hacia el hombre, como el Buen Samaritano, para socorrerle y volverle a dar la vida, y se ha arrodillado ante nosotros para lavar nuestros pies sucios.</p>
+<p>Adorar el Cuerpo de Cristo quiere decir creer que allí, en ese pedazo de pan, se encuentra realmente Cristo, quien da verdaderamente sentido a la vida, al inmenso universo y a la más pequeña criatura, a toda la historia humana y a la más breve existencia.</p>
+<p>La adoración es oración que prolonga la celebración y la comunión eucarística, en la que el alma sigue alimentándose de amor, de verdad, de paz; se alimenta de esperanza, pues Aquél ante el que nos postramos no nos juzga, no nos condena.</p>
+<p>Por este motivo, reunirnos, caminar, adorar, nos llena de alegría. Al hacer la actitud de adoración de María, a quien recordamos particularmente en este mes de mayo, rezamos por nosotros y por todos; rezamos por cada persona que vive en esta ciudad para que pueda conocerte, Padre, y a Aquél que tú has enviado, Jesucristo. Y de este modo tener la vida en abundancia.</p>
+<p>Amén.</p>
+<p>[Traducción del original italiano realizada por Jesús Colina]</p>
+<p>Cantaban las mujeres por el muro clavado</p>
+<p>cuando te vi, Dios fuerte, vivo en el Sacramento, palpitante y desnudo, como un niño que corre perseguido por siete novillos capitales.</p>
+<p>Vivo estabas, Dios mío, dentro del ostensorio. Punzando por tu Padre con agujas de lumbre. Latiendo como el pobre corazón de la rana que los médicos ponen en el frasco de vidrio.</p>
+<p>Piedra de soledad donde la hierva gime y donde el agua oscura pierde sus tres acentos, elevan tu columna de nardo bajo nieve sobre el mundo de ruedas y halos que circula.</p>
+<p>Yo miraba tu forma deliciosa flotando en la llaga de aceites y paño de agonía, entornaba mis ojos para dar en el dulce tiro al blanco de insomnio sin un pájaro negro.</p>
+<p>Es así, Dios andado, como quiero tenerte. Panderito de harina para el recién nacido. Brida y materia juntas en expresión exacta por amor de la carne que no sabe tu nombre.</p>
+<p>Es así, forma breve de rumor inefable, Dios en mantillas, Cristo diminuto y eterno, repetido mil veces, muerto, crucificado por la impura palabra del hombre sudoroso.</p>
+<p>Cantaban las mujeres en la arena sin norte, cuando te vi presente sobre tu Sacramento. Quinientos serafines de resplandor y tinta en la culpa neutra gustaban tu racimo.</p>
+<p>¡Oh, forma sacratísima, vértice de las flores, donde todos los ángulos toman sus luces fijas, donde número y boca construyen un presente cuerpo de luz humana con músculos de harina!</p>
+<p>¡Oh, forma limitada para expresar concreta muchedumbre de luces y clamor escuchado! ¡Oh, nieve circundada por témpanos de música! ¡Oh, llama crepitante sobre todas las venas!</p>
+<h3>DE LA ADORACIÓN NOCTURNA MEXICANA</h3>
+<p>Pedimos a Dios que aumente el número de adoradores diurnos y nocturnos de su Divina Majestad presente en el Santísimo Sacramento y deseamos que los nuevos grupos de adoradores que nacen en las diferentes Diócesis y Parroquias en nuestra Patria, acudan a cumplir con su vigilia de obediencia a Cristo Rey en su montaña santa, en el Cerro del Cubilete.</p>
+<p>A continuación presentamos el discurso de Su Eminencia el Cardenal Jozef Tomko, Presidente del Comité Pontificio para los Congresos Eucarísticos Internacionales.</p>
+<h3>MENSAJE DE S. ER. CARDENAL JOZEF TOMKO LEGADO DEL PAPA BENEDICTO XVI</h3>
+<p>A la Federación Mundial de Adoración Nocturna y otras obras Eucarísticas con motivo del XLVIII Congreso Eucarístico Internacional.</p>
+<p>¡Bendito y alabado sea Jesús en el Santo Sacramento del Altar!</p>
+<p>Hermanos: en la liturgia de la palabra de esta celebración viva hemos escuchado cómo el Señor Jesucristo quiso quedarse entre nosotros en el pan que alimenta y en el vino que alegra, especies eucarísticas que perpetúan su Resurrección entre nosotros.</p>
+<p>La comunidad cristiana postpascual anunció a Tomás que el Señor estaba vivo, pero para creer en ello Tomás quería ver y tocar al Resucitado. Una semana después, el Señor Resucitado abordó a Tomás, el cual expresó su fe con la exclamación: “Señor mío y Dios mío”. En respuesta, Jesús llamó dichosos a quienes creen sin ver ni tocar (cfr. Jn 20, 28ss).</p>
+<p>Este es el misterio de fe que celebramos en cada misa, esta es la Nueva y Eterna Alianza, y aunque no veamos directamente a Dios, Él continúa mostrando su presencia en la Eucaristía. Su don de sí mismo es causa de nuestra alegría.</p>
+<p>Cuando participamos de la celebración de la Eucaristía o durante el tiempo de adoración ante el Santísimo Sacramento, es posible reconocer al Señor que da la vida por sus amigos. Y la respuesta de los adoradores nocturnos es que amor con amors se paga.</p>
+<p>En la Última Cena, Jesús se reunió con sus amigos, los Apóstoles, para celebrar la Pascua. Esa noche el Señor tomó el pan y el vino, lo bendijo y los compartió, diciendo: comed y bebed.</p>
+<p>En el Calvario, el Señor Jesús entregó su cuerpo en la cruz y con su sangre derramada nos rescató del mal, del pecado, de la muerte; nos perdonó y nos dio su vida. Es un Misterio de amor, y si bien no lo vemos, creemos.</p>
+<p>Pero, ¿cómo debemos adorar al Señor? Con todo el corazón, con todas las fuerzas, con todo lo que somos y hacemos y con ese mismo amor nos inclinamos ante el prójimo para servirlo.</p>
+<h3>PARA LA VIDA DEL MUNDO</h3>
+<p>“Yo soy el pan vivo bajado del cielo. El que coma de este pan, vivirá” (Jn 6:51).</p>
+<p>Cristo Rey</p>
+<p>eternamente, y el pan que yo daré es precisamente la carne para la vida del mundo” (cfr. Jn 6,51). Jesucristo dona su carne y sangre para la vida del mundo. Él es el cordero de Dios que quita el pecado del mundo (cfr. Jn 1,29).</p>
+<p>Pero, ¿de qué mundo estamos hablando? Es el mundo de Cristo, por quien todo fue hecho, pero también el lugar donde Él realizó su acción vivificante. Es el mundo que lo ha rechazado, como dice el Evangelio de Juan, con la murmuración y el abandono, la negación y la traición. Cuando el hombre de este mundo rechaza la rectitud y la verdad de Dios, se pone en evidencia la necesidad que tiene el hombre de ser amado, liberado y salvado de sus pecados. Jesucristo se dona en la cruz y en la Eucaristía para dar vida y salvación al mundo.</p>
+<p>Fue durante la Última Cena cuando el Señor confió a su Iglesia la Eucaristía como Sacramento necesario para tener vida, amor, unidad y salvación. El Padre eterno nos hace hijos suyos por Cristo; por el Bautismo, Dios nos da su vida. Y la Santa Eucaristía es el Sacramento que fortalece la vida de Cristo en nosotros.</p>
+<p>Ante este Santo Sacramento conocemos cuál es el interés de Dios para salvarnos, al entregarnos a su Hijo Jesucristo en la cruz y en la Eucaristía. El pelícano es una ave acuática que, según creían los antiguos, cuando no encontraba comida para sus polluelos, se abría el pecho para nutrirlos con su propia sangre.</p>
+<p>===</p>
+<p>(Y Cristo Rey A A A ES E —&gt; A)</p>
+<p>A remeeememmEEe———</p>
+<p>La sangre. La tradición cristiana aplica esta imagen a Cristo Eucaristía, que da su sangre para que el mundo tenga vida, y la tenga en abundancia.</p>
+<p>A Cristo es la vid plantada en la viña elegida, que es el Pueblo de Dios, Iglesia. Por el misterio del pan Eucarístico, el Señor puede decirnos a cada uno: “el que come mi carne y bebe mi sangre habita en mí y yo en él” (Jn 6,56). Su vida pasa a nosotros como la savia vivificante de la vid pasa a los sarmientos, para que estén vivos y produzcan frutos. Sin verdadera unión con Cristo —en quien creemos y de quien nos alimentamos— no puede haber vida sobrenatural ni frutos fecundos en nosotros.</p>
+<h3>LOS FRUTOS EUCARÍSTICOS</h3>
+<p>Hermanos adoradores del Santísimo Sacramento: el primer fruto cristiano que nace de la adoración eucarística es el amor. Amar a Dios sobre todas las cosas. Con la participación en la Santa Comunión se nos transforma en el Cristo vivo que pide el mundo.</p>
+<p>Cuando estemos en la adoración no tengamos vergüenza de mostrar que amamos a Dios.</p>
+<p>Junto a este amor a Dios, nace el amor al prójimo. Este Congreso Eucarístico Internacional desea que toda la Iglesia y cada cristiano sean verdaderos evangelizadores. ¿Cómo podemos evangelizar?</p>
+<p>Adorador evangeliza cuando llena su vida de Dios en la contemplación Eucarística, cuando habla explícitamente de Jesucristo, cuando muestra a Cristo con la vida cristiana y cuando sirve al más necesitado. Además, quienes comemos y bebemos del alimento dado por el Señor, somos parte del cuerpo místico de Cristo; celebrar el banquete Eucarístico es un privilegio... una interpelación. El pan y el vino que presentamos ante el altar “nos están remitiendo a esa comida o bebida que debería estar en la mesa de todo ser humano; porque hay muchos hombres que no pueden disfrutar de tal derecho, bien porque no tienen qué comer o porque les falta con quién compartir, lo que representa una clamorosa injusticia”.</p>
+<p>Apenas hace algunos días, el Papa dijo en su Carta Apostólica Mane nobiscum Domine las siguientes palabras, preciosas para los adoradores: “la adoración Eucarística fuera de la Misa debe ser durante este año un objetivo especial para las comunidades religiosas y parroquiales. Postrémonos largo rato ante Jesús presente en la Eucaristía, preparando con nuestra fe y nuestro amor los descuidos, los olvidos e incluso los ultrajes que nuestro Salvador padece en tantas partes del mundo. Profundicemos nuestra contemplación personal y comunitaria en la adoración, con la ayuda de reflexiones y plegarias centradas siempre en la Palabra de Dios y en la experiencia de tanto a místicos antiguos y recientes. El Rosario mismo, considerado en su sentido profundo, bíblico y cristi céntrico, que es recomendado en la Carta Apostólica Rosarium Virginis Maríae, puede ser una ayuda adecuada para la contemplación Eucarística, hecha según la escuela de María y en su compañía”.</p>
+<p>El Santo Padre Juan Pablo II, en el Congreso Eucarístico de Sevilla, decía: “Quiera Dios que de la intimidad con Cristo Eucaristía surjan muchas vocaciones de apóstoles, de misioneros, para llevar este Evangelio de salvación hasta los confines del mundo... hoy toda la Iglesia está reclamando un nuevo talante misionero, un vibrante espíritu de evangelización, nuevo en ardor, en métodos y en expresiones”.</p>
+<p>Santa María, Madre del Verdadero Dios por quien se vive, ayúdanos a contemplar al Dios viviente en la adoración eucarística. Santa María del Cenáculo, punto de referencia de toda la comunidad eclesial, de todo adorador de la eucaristía, enséñanos a recibir el ardor del Espíritu Santo para evangelizar.</p>
+<p>¡Madre!, a ti, que participaste en los inicios de tu Iglesia con tu oración junto a los Apóstoles, te invocamos como modelo y figura de la Iglesia en la adoración a Dios y la caridad al prójimo.</p>
+<p>Con tu actitud de fe y tu intercesión maternal, ayúdanos a crecer en la fe cristiana y en amor a la Santa Iglesia.</p>
+<p>Acompáñanos en la tarea evangelizadora, para que por la Palabra y los Sacramentos, brote la fe, y hombres y mujeres se conviertan del pecado y perseveren todos en la vida de hijos de Dios. Amén</p>
+<p>Fuente: LA EUCARISTIA LUZ Y VIDA DEL NUEVO MILENIO. MEMORIA, GUADALAJARA MÉXICO 2004</p>
+<h3>¿SON EN EL SAGRADO CORAZÓN DE JESÚS?</h3>
+<p>La Solemnidad del Sagrado Corazón de Jesús es celebrada en la Montaña de Cristo Rey, y se considera la segunda fiesta importante en el Monumento Votivo Nacional. Con esta devoción comienza la devoción a Jesucristo Rey del Universo desde el Año 1919.</p>
+<p>En este año 2008, esta solemnidad celebrada el día 30 de mayo fue cubierta por la televisora &quot;María Visión&quot;. Esperamos hayan visto la transmisión de la celebración litúrgica de esta solemnidad.</p>
+<p>Reseña Histórica.</p>
+<p>El corazón en el lenguaje común, como en el de la Biblia, es uno de esos términos cargados de contenido y riqueza inexplicables. El corazón humano es el centro íntimo del hombre, del que proceden sus actos de inteligencia y voluntad. Es sobre todo, el lugar secreto, el santuario donde el hombre se encuentra a solas con Dios.</p>
+<p>En múltiples pasajes del Evangelio se percibe la intimidad, la piedad, la compasión; se ve cómo se alegra, se admira, teme o se aflige, y por encima de todo, se descubre un Corazón que ama apasionadamente al Padre y al Espíritu, a los hombres, sus hermanos. &quot;Habiendo amado a suyos... los amo hasta el extremo&quot; (Jn. 13,1).</p>
+<p>La última manifestación del amor de Cristo es la de su Corazón traspasado por la lanza del soldado en la cruz.</p>
+<p>€ Cristo Rey e</p>
+<p>A lo largo de la historia, el Señor ha escogido personas sobre quienes le rindan este honor y procuren que se le tributado.</p>
+<p>Fines del siglo XVII, en Francia, Jesucristo manifiesta su Amor bajo el signo de su Corazón a Santa Margarita María Alacoque, religiosa de la Visitación de Santa María en Paray-le-Monial: “Deseo ardientemente ser amado y conocido”.</p>
+<p>Santa Margarita dice: “Me parece que el gran deseo que Nuestro Señor tiene de que su Corazón Sagrado sea honrado es para renovar en las almas los efectos de su Redención”.</p>
+<p>La primera aparición del Sagrado Corazón de Jesús a Santa Margarita es el 27 de diciembre de 1673, fiesta de San Juan Evangelista. La segunda en 1674, la tercera en junio, en torno a la fiesta del Corpus Christi y llegamos a la manifestación decisiva en junio de 1675: “entonces descubriendo su divino corazón me dijo: he aquí el corazón que tanto ha amado a los hombres, de los cuales no recibo sino ingratitudes y desprecios... por eso te pido que sea dedicado el primer viernes después de la octava del Santísimo Sacramento a una fiesta particular para honrar mi Corazón, comulgando ese día y reparando su honor... te prometo también que mi corazón se dilatará para derramar con abundancia las influencias de su divino amor”.</p>
+<p>He aquí las promesas que hizo Jesús a Santa Margarita, y por medio de ella a todos los devotos de su Sagrado Corazón:</p>
+<p>1. Les daré todas las gracias necesarias a su estado.</p>
+<p>2. Pondré paz en sus familias.</p>
+<p>3. Les consolaré en sus penas.</p>
+<p>4. Seré su refugio seguro durante la vida, y, sobre todo, en la hora de la muerte.</p>
+<p>5. Derramaré abundantes bendiciones sobre todas sus empresas.</p>
+<p>6. Bendeciré las casas en que la imagen de mi Corazón sea expuesta y venerada.</p>
+<p>7. Los pecadores hallarán en mi Corazón la fuente, el Océano infinito de la misericordia.</p>
+<p>8. Las almas tibias se volverán fervorosas.</p>
+<p>9. Las almas fervorosas se elevarán a gran perfección.</p>
+<p>10. Daré a los sacerdotes el talento de mover los corazones más empedernidos.</p>
+<p>11. Las personas que propaguen esta devoción tendrán su nombre escrito en mi Corazón, y jamás será borrado de El.</p>
+<p>12. Les prometo en el exceso de mi misericordia, que mi amor todopoderoso concederá a todos aquellos que comulgaren por nueve primer viernes después de la octava del Santísimo Sacramento.</p>
+<p>primeros viernes consecutivos, de alcanzar la perseverancia en la gracia de la perseverancia final; no morirán sin mi gracia, ni sin la recepción de los santos sacramentos. Mi Corazón será su seguro refugio en aquel momento supremo.</p>
+<p>Las condiciones para ganar esta gracia son tres:</p>
+<p>1. Recibir la Sagrada Comunión durante nueve primeros viernes consecutivos y sin ninguna interrupción.</p>
+<p>2. Tener la intención de honrar al Sagrado Corazón de Jesús.</p>
+<p>3. Ofrecer cada Sagrada Comunión como un acto de expiación por las ofensas cometidas contra el Santísimo Sacramento.</p>
+<p>La verdadera devoción al corazón de Cristo, implica: El configurarse, el esculpir y copiar en el alma los rasgos de Jesús y unirse con Él para reparar al Padre.</p>
+<p>He aquí este Corazón que tanto ama a los hombres... y a ti en particular...</p>
+<p>¡Al menos tú ámame!</p>
+<p>P. Saul Cruz Jiménez</p>
+<h3>JUNIO. MES DEL SAGRADO CORAZÓN.</h3>
+<h3>HORA SANTA DE EXPIACIÓN</h3>
+<p>1.- Exposición del Santísimo Sacramento. Tiroteando piedra y adelantándose algunos pasos se prosternó caído sobre su rostro; y oraba a fin de que fuera posible pasar de él aquella hora.</p>
+<h3>PRIMERA PARTE</h3>
+<p>4) Y dijo: &quot;Padre Mío, todas las cosas te son posibles. Padre, si quieres, pasa este cáliz de Mi. Padre Mío, es posible, no me hagas beber este cáliz; pero no obstante, que no se haga lo que yo quiero, sino lo que Tú.</p>
+<p>Minutos de silencio.</p>
+<p>Coord. Tercero. SUPLICAS. D Corazón de Jesús, hostia viviente, Santa, agradable a Dios, ten piedad de nosotros. Res. Ten piedad de nosotros. 2) Corazón de Jesús, propiciación de nuestros pecados, ten piedad de nosotros. Res. Ten piedad de nosotros. 3) Corazón de Jesús, obediente hacia la muerte, ten piedad de nosotros. Res. Ten piedad de nosotros. 4) De todo mal, libranos, Señor. Res. Libranos, Señor. 5) De todo pecado, libranos, Señor. Res. Libranos, Señor. 6) De la muerte eterna, líbranos, Señor. Res. Libranos, Señor.</p>
+<p>Primera meditación: Jesús en el Huerto Oración.</p>
+<p>7) Corazón de Jesús, que siempre recordemos agradecidos tu pasión, te rogamos, Señor.</p>
+<p>(Por consejo de San Ignacio, hacemos con nuestra mente la composición del lugar y contemplamos a CRISTO NUESTRO SEÑOR en el Huerto, y consolamos considerándolo con atención estas palabras de la Sagrada Escritura.)</p>
+<p>8) Corazón de Jesús, que te dignes en nuestras tristezas, te rogamos, Señor. Res. Te rogamos, Señor.</p>
+<p>9) Corazón de Jesús, que en todas nuestras miserias nunca desfallezcamos en la oración, te rogamos, Óyenos.</p>
+<p>Res. Te rogamos, Óyenos.</p>
+<p>10) Cordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros, Res. Ten piedad de nosotros,</p>
+<p>O Cristo Rey</p>
+<p>M2 _—_——_—— gg</p>
+<p>Sac. ORACIÓN.</p>
+<p>Res. Ten piedad de nosotros.</p>
+<p>4) De todo desprecio de Ti, líbranos, Señor.</p>
+<p>Oremos: Jesucristo, Señor nuestro, que en el huerto nos enseñaste a orar con la palabra y con el ejemplo, para vencer los peligros de las tentaciones: Señor. concédenos propicio, que dedicados nosotros siempre a la oración, merezcamos conseguir fruto abundante de ella: que vives y reinas con Dios Padre en unidad del Espíritu Santo, Dios, por todos los siglos de los siglos. Amén.</p>
+<p>5) De todo cansancio en la oración, líbranos, Señor. 6) De toda impaciencia en los dolores, libranos Señor. 7) Corazón de Jesús, que siempre permanezcamos fieles a Ti, te rogamos, Óyenos.</p>
+<p>Res. Ten piedad de nosotros.</p>
+<p>Coro: — Salmo 50.</p>
+<p>8) Corazón de Jesús, que gustosos velemos contigo, te rogamos, Óyenos. 9) Corazón de Jesús, que te dignes apiadar de todos los que te desprecian, te rogamos, Óyenos. 10) Cordero de Dios que quitas el pecado del mundo, ten piedad de nosotros.</p>
+<p>Res. Ten piedad de nosotros.</p>
+<p>Sac. ORACIÓN.</p>
+<p>Oremos: Señor nuestro Jesucristo, que por boca del salmista te quejaste del abandono de tus amigos: &quot;espere quien se compadeciese de mí y no lo hubo; y quien me consolase, y ninguno hallé&quot;: concédenos, que por nuestro pecados previstos de reparaciones, nos sea dado ofrecerte obsequios que te agraden. Que vives y reinas por los siglos de los siglos. Amén.</p>
+<p>Coro: De profundis.</p>
+<p>Diác. O Acol. Tercera meditación: Jesús agonizante.</p>
+<p>Minutos de silencio.</p>
+<p>(Pensando de nuevo en Cristo que está en el Huerto, consideremos devotamente las palabras de la Sagrada Escritura:).</p>
+<p>1) Y dejándolos se retiró aún a orar por tercera vez, repitiendo las mismas palabras. 2) En eso se le apareció un ángel del cielo, confortándole. 3) Y entrando en agonía oraba más intensamente.</p>
+<p>Minuto de Silencio</p>
+<p>Coordinador.</p>
+<p>Primero. SÚPLICAS. Coro</p>
+<p>1) Corazón de Jesús, confortado por un ángel, ten piedad de nosotros. Res. Ten piedad de nosotros,</p>
+<p>2) Corazón de Jesús, agonizante, ten piedad de nosotros. Res. Ten piedad de nosotros.</p>
+<p>3) Corazón de Jesús, perseverante en la oración, ten piedad de nosotros. Res. Ten piedad de nosotros.</p>
+<p>4) De muerte repentina e imprevista, líbranos Señor. Res. Líbranos, Señor,</p>
+<p>5) Del abandono de la oración, líbranos Señor. Res. Líbranos, Señor.</p>
+<p>6) De toda negligencia para con nuestro ángel custodio, líbranos Señor. Res. Líbranos, Señor.</p>
+<p>7) Corazón de Jesús, que te dignes tener misericordia de todos los que en este momento se hayan estado de pecado, te rogamos, Señor, óyenos.</p>
+<p>Óyenos, Señor.</p>
+<p>8) Corazón de Jesús, que te dignes orar para no caer en la tentación. Basta ya; llega la hora: el Hijo del Hombre será entregado en manos de los pecadores. Levantaos, vamos que el traidor está cerca.</p>
+<p>Res. Te rogamos, óyenos.</p>
+<p>9) Corazón de Jesús, que te dignes bendecir a todos los que asisten a los enfermos y moribundos. Res. Te rogamos, Óyenos.</p>
+<p>Coordinador. Segundo. SUPLICAS.</p>
+<p>1) Corazón de Jesús, que con oración constante venciste la fatiga de la pasión, ten piedad de nosotros. Res. Ten piedad de nosotros.</p>
+<p>2) Corazón de Jesús, esperanza y fortaleza nuestra, ten piedad de nosotros. Res. Ten piedad de nosotros.</p>
+<p>3) Corazón de Jesús, que te aplastaste el corazón con tu Madre inmaculada y de tus discípulos tibios y temblorosos, ten piedad de nosotros. Res. Ten piedad de nosotros.</p>
+<p>nosotros.</p>
+<p>Coro: Canto a la bendición. Res. Ten piedad de nosotros.</p>
+<p>Bendición con el Santísimo Sacramento</p>
+<p>4) De toda perfidia y sacrilegio, líbranos Señor. Res. Líbranos, Señor.</p>
+<p>Oremos: A quienes creemos y confesamos que en este sacramento está realmente presente Jesucristo, quien por redimirnos nació de la Virgen María, padeció muerte de cruz y resucitó de entre los muertos, concédenos, Señor, obtener de él nuestra salvación eterna. Por Jesucristo nuestro Señor.</p>
+<p>Amén.</p>
+<h3>ORACIÓN DE DESAGRAVIO</h3>
+<p>1.- Bendito sea Dios. 2.- Bendito sea su santo nombre. 3.- Bendito sea Jesucristo, verdadero Dios y verdadero hombre. 4.- Bendito sea el Nombre de Jesús. 5.- Bendito sea su Sacratísimo Corazón. 6.- Bendita sea su preciosísima Sangre. 7.- Bendito sea Jesús en el Santísimo Sacramento del altar. 8.- Bendito sea el Espíritu Santo Consolador. 9.- Bendita sea la gran Madre de Dios y María Santísima. 10.- Bendita sea su Santa e Inmaculada Concepción. 11.- Bendita sea su gloriosa Asunción a los cielos. 12.- Bendito sea el nombre de María Virgen y Madre.</p>
+<p>Sac. ORACIÓN</p>
+<p>Oremos: Señor nuestro Jesucristo, que en tus días de vida mortal ofreciendo plegarias y suplicas con grande clamor y lágrimas a aquel que podía salvarte de la muerte fuiste oído por tu filial piedad con obediencias, y que con tu pasión y muerte venciste al mundo y a su príncipe: recibe esta Hora Santa que ofrecemos en testimonio de nuestro agradecimiento y compasión, para aplacar la ira divina, para implorar humildemente el auxilio de tus gracias a favor de todos los hombres; te suplicamos concedas a las Almas del Purgatorio el eterno descanso, a los que esta noche han de morir la gracia final, a los pecadores la verdadera penitencia, a los paganos la luz de la fe, a nosotros y a todos nuestros familiares tu bendición; que vives y reinas.</p>
+<h3>EXCMO. SR. OBISPO D. FELIPE SALAZAR VILLAGRANA</h3>
+<p>El personal que atiende el servicio religioso en el Monumento Votivo Nacional de Cristo Rey felicita a Mons. Felipe Salazar Villagrana con motivo del inicio de su servicio episcopal en la Diócesis de San Juan de los Lagos el día 14 de mayo del presente año.</p>
+<p>Pedimos a Cristo Rey que lo asista con su Espíritu para que pueda conducir el rebaño encomendado en esta Diócesis Mariana por los caminos del Reino de Dios. Que su ministerio episcopal sea pastoral y espiritualmente muy fecundo.</p>
+<p>Hacemos votos para que siga acompañando a su presbiterio y a los fieles laicos en la peregrinación cada año con motivo de la fiesta de Cristo Rey, siguiendo la buena costumbre de su antecesor que venía a esta montaña a rendirle el homenaje de adoración y amor a Cristo el Señor.</p>
+<h3>PEREGRINACIONES</h3>
+<p>DIECISEIS MIL PEREGRINOS CON INTEGRANTES DE LAS ESCUELAS DE PASTORAL PERTENECIENTES A NUESTRA PATRIA, VISITAN LA MONTAÑA DE CRISTO REY.</p>
+<p>El día 3 de mayo recibimos la magna peregrinación de las Escuelas de Pastoral, presidida por el EXCMO. SR. OBISPO D. FELIPE TEJEDA GARCÍA, Auxiliar de la Arquidiócesis de México, D.F., con motivo del día de Patton, quien ha presidido la Celebración de la Eucaristía y encabezado esta magna peregrinación de Cristo Rey Universal con su amor y misericordia. Sigue atrayendo multitudes y en esta ocasión ha tocado su visita a los agentes de pastoral diseminados por todas las comunidades eclesiales de Nuestra Patria.</p>
+<p>El objetivo es adorar a Cristo como Rey, reconocerlo y servirle como cristianos comprometidos. Agradecemos en primer lugar a Mons. Felipe Tejeda García M.Sp.S., quien ha presidido la Celebración de la Eucaristía y encabezado esta magna peregrinación de Cristo Rey Universal con su amor y misericordia. Agradecemos a todo el equipo coordinador y le pedimos a Cristo Rey que les bendiga y aumente su celo por ayudar en la pastoral de la Iglesia con el fin de afianzar el Reino de Dios.</p>
+<h3>PEREGRINACIÓN DE LA DIÓCESIS DE VERACRUZ</h3>
+<p>PRESIDIDA POR EL EXCMO. SR. OBISPO D. LUIS FELIPE GALLARDO MARTÍN DEL CAMPO, quien sucede al problemático primer rey y da inicio al reinado más recordado de la historia del pueblo elegido, cuya capital muy pronto establecería en Jerusalén.</p>
+<p>El Excmo. Sr. Obispo D. Luis Felipe Gallardo Martín del Campo, Obispo de Veracruz, rinde su homenaje a Cristo Rey, encabezando la peregrinación donde participan sus fieles y su presbiterio.</p>
+<p>Después de visitar la Insigne Basílica de Nuestra Señora de Guadalupe, en el D.F., con el fin de ponerse bajo su protección, ha llegado a este lugar Santo, para adorar a Cristo Rey, según lo expresa en la Homilía que publicamos en esta reseña.</p>
+<p>HOMILÍA Lucas 23,35-43. Señor, acuérdate de mí cuando llegues a tu reino.</p>
+<p>En el evangelio que acabamos de escuchar San Lucas nos ofrece una escena paradójica de la pasión de Jesús, cuando él está ya clavado en la cruz y algunos de los presentes —las autoridades y los guardias— se burlan de él: “si eres el rey de los judíos, sálvate a ti mismo”.</p>
+<p>David aparece hoy, por tanto, como figura del futuro Mesías. Si ya de él se puede decir:</p>
+<p>“tú serás el pastor de mi pueblo Israel”, nosotros sabemos que esta realeza se cumple de un modo mucho más pleno y profundo en Cristo Jesús. Nos lo ha explicado con entusiasmo san Pablo, en el himno cristológico de la carta a los de Colosas: imagen de Dios, primogénito de todo el cosmos, cabeza de la Iglesia, el que tiene la plenitud de la vida.</p>
+<p>De David rey a Cristo Rey</p>
+<p>Nosotros nos alegramos de esta primacía de Cristo, porque nos toca de cerca: sabemos que en él se cumple toda nuestra historia y esperanza.</p>
+<p>que Dios &quot;nos ha trasladado al reino de su Hijo querido&quot; y nos hace compartir con él las riquezas de su luz y de su libertad. En él reside toda la plenitud y, además, en él se ha realizado la reconciliación universal por la sangre de su cruz. ¿Podemos pensar en un himno más apropiado para Cristo Rey?</p>
+<p>La historia de Israel tiene algunos reyes —no muchos— que se pueden considerar como figuras del que iba a ser Rey del Universo en los planes de Dios. Por eso hoy leemos el nombramiento de David como rey. Los representantes de las tribus de Israel, el Reino del Norte —los del sur, Judá, ya le habían reconocido como sucesor de Saúl— van a rendirle pleitesía y le ungen como rey también de Israel, apoyándose en la voluntad de Dios, que había dicho: &quot;tú serás el pastor de mi pueblo Israel, tú serás el jefe de Israel&quot;. Así David unió en un mismo Reino las tribus del Norte y las del Sur, siendo así rey de toda la Palestina de la época. Esta unión de los dos reinos duró poco, porque después del reinado de su hijo Salomón, se volverían a dividir.</p>
+<p>La paradoja de un Rey clavado en la cruz nos recuerda lo que Jesús había dicho a Pilato: &quot;mi reino no es de este mundo&quot;. Su reinado es, en verdad, especial. Él tuvo que ir corrigiendo la idea de realeza y mesianismo que tenían sus discípulos. Cuando le quisieron nombrar rey, después de la multiplicación de los panes, se escapó. Él no había venido a ser servido, sino a servir y dar su vida por todos. Ahora está, por tanto, en la plenitud de su realeza porque está en la plenitud de su entrega. Ya toda su vida había sido entregada generosamente.</p>
+<p>Miren que Pedro dijo: &quot;pasó haciendo el bien&quot;: consolando, perdonando, curando, atendiendo, comunicando esperanza, dando testimonio de la verdad.</p>
+<p>Colosenses 1,12-20. Nos ha trasladado al reino de su Hijo querido. Esa es su realeza. No entendió su Reino como privilegio, no buscó poder político, ni prestigio social, ni fuerza militar, ni riquezas. Sus &quot;credenciales&quot; las proclamamos en el prefacio: &quot;un reino eterno y universal, el reino de la verdad y la vida, el reino de la santidad y la gracia, el reino de la justicia, el amor y la paz&quot;. Nuestro Rey está clavado en la cruz, mostrándonos que sólo el amor y la entrega solidaria pueden salvar al mundo. Sus seguidores —la comunidad eclesial y cada uno de nosotros— tendremos que aprender esta lección. Nuestra actitud no deberá ser dominio, sino servicio.</p>
+<p>prestigio político o económico, sino de sorprendente es que el ladrón exprese así su diálogo humilde y comunicador de fe, por lo que escucha de labios de Jesús: esperanza. Evangelizamos más al mundo con nuestra entrega generosa que con nuestros discursos o en la ostentación de nuestras instituciones. En nosotros también se debe cumplir lo de que “servirás a Cristo con ojos profundos, inspirados por el Espíritu de Dios. Con la convicción de que ese Cristo Jesús nos está abriendo el camino del Reino y todos los que nos incorporemos a él estamos llamados a su mismo destino de vida y realeza. El primer Adán vio cómo se le cerraban las puertas del paraíso. El nuevo Adán, que está a punto de entrar en su nueva existencia pascual, abre las puertas del paraíso al buen ladrón.</p>
+<p>El buen ladrón, un buen maestro.</p>
+<p>Ante ese Rey que muere en la cruz, las reacciones de la gente son diversas: unos le miran desde lejos, otros han escapado por miedo, otros se burlan de él. Pero hay una persona que cree en él: un buen ladrón. No sabrá de teologías, pero intuye que ese que muere a su lado es alguien especial: “Jesús, acuérdate de mí cuando llegues a tu reino”. Ha creído en Jesús como Rey, a pesar de que le está viendo desangrarse en un momento de mínima credibilidad, ajusticiado en la cruz. Allí mismo está también Cristo, intentando seguir su camino, superando a veces tentaciones de desánimo. La Madre, María, y unos pocos discípulos están presentes.</p>
+<p>Dichosos los invitados al banquete de bodas del Reino.</p>
+<p>En el Padrenuestro pedimos siempre: “venga a nosotros tu reino”. Hoy lo podemos rezar o cantar con mayor confianza. Porque creemos en Cristo, intentamos seguir su camino.</p>
+<p>seguros de que él quiere construir unos cielos nuevos y una tierra nueva, un Reino que —vale la pena repetir su descripción del prefacio— es un reino de verdad y de vida, de santidad y gracia, de justicia, amor y paz. Ese es el futuro de nuestro camino por este mundo.</p>
+<p>Y el alimento es la Eucaristía, el mismo Cristo, el Resucitado, que se nos da como fuerza para que sigamos su camino con perseverancia y alegría.</p>
+<p>Cuando el sacerdote nos invita a acercarnos a la comunión, dice unas palabras que, en su versión latina, apuntan claramente, no sólo al Reino que Cristo nos ha preparado, sino a un banquete festivo: “Dichosos los invitados a la cena de bodas del Cordero, de Cristo (‘ad coenam Agni vocati sunt)”. No se trata sólo de que estamos invitados a “esta mesa” de la Eucaristía, que ya es mucho, sino a lo que esta mesa prefigura: la mesa del banquete celestial, la mesa festiva de bodas, ya en el Reino definitivo.</p>
+<p>Con razón pedimos a Dios en la poscomunión de hoy, después de recibir el alimento de la inmortalidad: “Te pedimos, Señor, que quienes nos gloriamos de obedecer los mandatos de Cristo, Rey del Universo, podamos vivir eternamente con él en el reino del cielo”.</p>
+<h3>**PEREGRINACIÓN**</h3>
+<p>6 de Junio del año 2008</p>
+<p>En este día como ya es una Santa costumbre vino como peregrinos todo el seminario de Aguascalientes, Ags. En sus diversas secciones: Preparatoria, Curso Introductorio, Filosofía, Teología y Y.</p>
+<p>La peregrinación es singular, llegaron como adoradores para postrarse en adoración la noche del 6 de Junio para amanecer celebrando la Santísima Eucaristía a las 6 de la mañana del día siguiente culminando su adoración.</p>
+<p>La Homilía que se transcribe con motivo de esta celebración estuvo a cargo de uno de los Diáconos. Como muchas generaciones de mexicanos, nosotros, quienes integramos el Seminario Diocesano de Aguascalientes, hemos llegado a la cima de esta montaña para encontrarnos con Jesús. En el silencio de esta noche hemos reconocido su presencia real en la Eucaristía. A Él hemos agradecido los dones que ha derramado sobre nosotros en este año de formación, hemos pasado esta noche adorándole porque Él es nuestro Dios y Señor, nuestro Rey. Hemos implorado su misericordia, el perdón de nuestros pecados, el perdón de los pecados de nuestros familiares y amigos, de nuestra patria, del mundo entero.</p>
+<p>Para esto hemos llegado hasta esta montaña santa, pues aquí en la cima parece que estamos más cerca del cielo, más cerca del trono de Dios. La montaña ha sido siempre considerada un lugar de encuentro con Dios; a ellas subía el pueblo de Israel para ofrecer sacrificios a Yahvé. A una montaña, el monte Sinaí, subió Moisés para recibir las Tablas de la Ley.</p>
+<p>Moría subió Abraham para ofrecer a Dios, en transfigurado, sacrificio a su hijo Isaac; a la montaña subió Moisés, al Sinaí, y ahí Dios le entregó las tablas de la Ley, ahí se estableció la alianza entre Dios y su pueblo; a la montaña subió Elías y a la montaña subió también el Señor Jesús para enseñar las bienaventuranzas, en Tabor se transfiguró en la presencia de tres de sus discípulos, en el monte solía pasar noches enteras en oración a solas con su Padre; en un monte, el de los Olivos, padeció el tormento de su agonía y dijo a su Padre: &quot;que no se haga lo que yo quiero sino lo que quieres Tú&quot;. En un pequeño monte, el Calvario, derramó su sangre para redimirnos. Y, una vez resucitado, escogió también un monte, en Galilea, para despedirse de sus discípulos con esperanza antes de ascender al cielo.</p>
+<p>Cada día en la oración y el sacrificio de la Misa, nosotros ascendemos a la cima de la montaña para encontrarnos con Dios. Pero debemos aprender a bajar luego al encuentro de nuestros hermanos; Moisés bajó con las tablas de la Ley, nosotros también debemos bajar para contar a los hombres las maravillas de Dios.</p>
+<p>Allá abajo nos espera un mundo que muchas veces trata de expulsar a Dios de los ambientes: del trabajo, de la cultura, de la economía, de la política, de la educación... Es necesario que descendamos y trabajemos con esperanza por impregnar cada ambiente, cada lugar con la presencia de Dios.</p>
+<p>En esta montaña nuestros padres y nuestros abuelos han proclamado la realeza de Cristo, han exclamado ¡Viva Cristo Rey en mi corazón, en mi casa y en mi patria! Cristo no será el Rey de nuestra patria por tener este monumento en el cerro del Cubilete, Cristo será Rey cuando Él reine en cada corazón, en cada familia, en la sociedad, cuando los valores del Evangelio sean aceptados y vividos por nosotros. Por eso, donde un corazón perdona, allí está triunfando Cristo Rey, donde un enfermo acepta con fe su enfermedad, allí triunfa Cristo Rey, donde alguien es perseguido por ser coherente con su fe en su manera de vivir, allí vence Cristo Rey. Donde una persona gasta su vida al servicio de los demás o cumple con sencillez sus obligaciones diarias, como padre, madre, hijo, estudiante, obrero, allí reina Cristo Rey.</p>
+<p>Que bello monumento se ha construido aquí, Cristo es Rey, así lo había dicho a Pilato: &quot;Soy Rey, pero mi reino no es de este mundo&quot;. Sobre la cruz se colocó un letrero para ridiculizarlo: &quot;Jesús nazareno, rey de los judíos&quot;, pero ¿cómo puede concebirse un rey crucificado? Esto no se concibe.</p>
+<p>entendieron quienes estaban frente a Él en la cruz, por eso le decían: &quot;Si eres rey de los judíos, sálvate a ti mismo&quot;. Ellos no entendieron que Jesús no nos salva bajándose de la cruz, sino quedándose en ella. Desde allí salva y reina. Y su reino no es como el reino de los reyes de este mundo, que muchas veces se imponen a base del poder económico, de las campañas políticas o de la fuerza militar. Su corona es de espinas, su trono es la cruz. En su reino los últimos son los primeros y los primeros los últimos. Su reino es de servicio; Él reina dando la vida. El quiere reinar en el corazón de cada uno.</p>
+<p>Que distinto piensan los que reinan según los criterios del mundo. En este tiempo en el que nos ha tocado vivir, reinan quienes tienen belleza física, quienes tienen dinero o poder, quienes son hábiles en los negocios o tienen influencias. Gracias, Señor por este año de formación, perdón por nuestras negligencias y pecados.</p>
+<p>La viuda dio todo lo que tenía para vivir, todo lo puso al servicio de Dios.</p>
+<p>Cómo es necesario que hagamos nosotros al interior de la Iglesia un examen de conciencia sobre esto: ¿no actuaremos a veces según los criterios del mundo? Cuando pretendemos ser más por tener títulos, cuando anhelamos determinados cargos, cuando queremos estar al frente de tales o cuales parroquias o tener más influencias.</p>
+<p>“El que quiera ser el más grande que sea el servidor de todos”. Y nunca perdamos piso, sirvamos y hagámoslo con humildad, porque en la Iglesia y en la sociedad Cristo es quien debe reinar, no nosotros. Él es el Salvador del mundo y nosotros, unos pobres obreros en la viña del Señor.</p>
+<p>Que Cristo reine en el corazón de cada uno de nosotros. Y que al alimentarnos dentro de un momento del pan que da la vida, nos veamos fortalecidos para bajar de la montaña y, como vasallos fieles, luchar por que Cristo reine también en cada corazón. Así sea.</p>
+<p>Y Cristo Rey Cerro del Cubilete, 7 de junio de 2008</p>
+<p>sn ¿La monta a De “YVOristo Rey y atos Editoriales. Registros. Director: Registrada en la Sra. De Excmo. Y Revmo. Sr. Dr. D. Patrimonio y Fomento Industrial: José Guadalupe Martín Rábago. 7 de febrero de 1983 Fondedore Expediente: 212332. Pbro. José A. Betancourt. Registrada en la Comisión Jefe de Redacción: Calificadora de Publicaciones y Sr. Pbro. Jesús Ortiz Ayala revistas ilustradas o (Secretaría de Gobernación): Diseño: Certificado de Licitud de Títulos No. ldg. Josué Araiza Segura. 9572 Editor: (Expediente: 1/43283/3498) y Centro General de Propaganda Certificado de licitud de Contenido Pedro Moreno 4312 No, 1645 Tel. 713-29-97 y 716-09-42 (Expediente: 1/43283/3498), Apdo. Post. No. 360 ambos de fecha 13 de Abril de 2005 león Gto. México uscripciones y gente Sr. Pbro. Jesús Ortiz Ayala Las suscripciones empezarán el 01 de Enero, o el mes en que se pague. Serán efectivas si las ampara su importe. Precios de la Revista En la República $120.00 doce meses $70.00 seis meses En el Extranjero $35.00 Dls. doce meses $15.00 Dis. Seis meses Número suelto en la República $20.00 Número atrasado $25.00 Número suelto en el Extranjero $8.00 Dis. Número atrasado $12.00Dis Correspondencia y envíos de dinero al Apartado 360 - León, Gto., México Revista impresa en: “CORTES E IMPRESOS” Blvd. Mariano Escobedo No. 4310 « Col. Flores Magón e León, Gto. e Tels. 01(477) 777-1656 y 57 * Fax. 01(477) 777-1504 e corteseimpresos@hotmail.com Correspondencia de Segunda Clase. Registro DGC. Núm 002 Características: 219222210</p>
+<p>Por la lanza en su costado brotó el río de pureza, y mientras dura la Cruz, há para lavar la bajeza, y en ella el crucificado que nos baja el pecado. Un río de gracia y de luz, Cristo, herida y manantial, a tu muerte nos da la vida el Padre nos da la vida, que es gracia de sangre nacida en tu fuente bautismal. Nos da la gracia perdida. Amén.</p>
+<p>Sangre y agua del abismo, de un corazón en tormento: oficio de lectura, sagrado Corazón de Jesús, nos baña con el bautismo.</p>
+</div><footer class="article-footer"><a href="#/05">↑ Lista</a><a class="nav-next" href="#/05">← Lista</a></footer></article><article class="article-panel" id="article-11-1" hidden><div class="panel-head"><button type="button" class="back-btn" data-back="articles" data-month="11">← Noviembre-Diciembre 2008</button></div><header class="article-header"><p class="article-meta"><span class="badge">Art. 1</span> Noviembre-Diciembre de 2008 · 7950 pal.</p><h2>Contenido completo del número</h2></header><div class="article-body">
+<p>Seminario Montañez Áño XXIV Vol. XXIV Num. 11 y 12 6 Noviembre - Diciembre del 2008</p>
+<h3>COPROCIÓN: $ 20.00</h3>
+<p>30</p>
+<p>Contenido</p>
+<p>1. Introducción 2. Documento de Aparecida, Brasil 3. Vocación a la vida religiosa 4. El Adviento y la Navidad 5. Mensaje del Sr. Arzobispo con motivo del Adviento y la Navidad 6. Para meditar en los primeros días del Adviento 7. La Santa Navidad, fiesta universal 8. Poesía de Navidad 9. Peregrinaciones de noviembre</p>
+<p>www.cristorey.arquidiocesisdeleon.org e-mail: oficina@cristorey.arquidiocesisdeleon.org</p>
+<p>“la montaña de Cristo Rey”</p>
+<p>Organo Oficial del Monumento Votivo Nacional a Cristo Rey, Silao Gto. México.</p>
+<p>Diseño: Manuel Ambriz Hernández E-mail: manuelzhOgmail.com</p>
+<p>La Montaña de Cristo Rey</p>
+<h3>INTRODUCCIÓN</h3>
+<p>Que Dios conceda salud y bendición a todos los lectores de la revista: “La Montaña de Cristo Rey” en el próximo tiempo del final del año litúrgico que culmina con la solemnidad de Cristo Rey. En este último número del año 2008, continuamos con la doctrina del documento de Aparecida con los números que se refieren a los “Discípulos misioneros con vocaciones específicas”. Estos números en su contenido son muy importantes porque se refieren a los Obispos, sacerdotes y religiosos en quienes descansa una carga pastoral evangelizadora muy importante para propiciar el encuentro con Jesucristo y un discipulado misionero. Somos conscientes que el agente principal que dinamiza la Iglesia es el Espíritu Santo, pero se vale de instrumentos humanos para llamar a los hombres hacia Cristo.</p>
+<p>También continuamos con el estudio de la vocación a la vida religiosa que es un llamado de Dios para hacer presente a Cristo pobre, casto y obediente. Esta vocación la vemos también como un regalo de Dios a su Iglesia.</p>
+<p>Queremos propiciar la preparación a la Navidad con alguna enseñanza del Santo Padre Benedicto XVI acerca del Adviento y con el mensaje de Adviento y Navidad del Arzobispo de León, Guanajuato. Estando mejor instruidos con el magisterio de la Iglesia, colaboraremos a vivir la Navidad con una verdadera actitud de fe, estimando el regalo que el Padre celestial nos hace de su Hijo para la redención del mundo. Necesitamos tener esta actitud de fe que contraste con el tinte pagano que quiere invadir el tiempo de Navidad.</p>
+<p>Con solidaridad de hermanos en el Señor Jesús, enviamos una felicitación a Mons. José Guadalupe Torres Campos, por su nombramiento como Obispo titular de la nueva Diócesis de Gómez Palacio, Durango. Se informa también de algunos peregrinos que vinieron a rendir su homenaje a Cristo Rey con motivo de su solemnidad.</p>
+<p>Deseamos a todos los lectores que Dios colme de sus bendiciones celestiales en la próxima Navidad y Año Nuevo.</p>
+<p>El Capellán</p>
+<p>A</p>
+<p>Documento de Aparecida (Brasil)</p>
+<p>Continuación...</p>
+<p>5.3 Discípulos misioneros con vocaciones específicas</p>
+<p>5.3.-1 Los obispos, discípulos misioneros</p>
+<p>184. La condición del discípulo brota de Jesucristo como de su fuente, por la fe y el bautismo, y crece en la Iglesia, comunidad donde todos sus miembros adquieren igual dignidad y participan de diversos ministerios y carismas. De este modo, se realiza en la Iglesia la forma propia y específica de vivir la santidad bautismal al servicio del Reino de Dios.</p>
+<p>185. En el fiel cumplimiento de su vocación bautismal, el discípulo ha de tener en cuenta los desafíos que el mundo de hoy le presenta a la Iglesia de Jesús, entre otros: el éxodo de fieles a las sectas y otros grupos religiosos; las corrientes culturales contrarias a Cristo y la Iglesia; el desaliento de sacerdotes frente al vasto trabajo pastoral; la escasez de sacerdotes en muchos lugares; el cambio de paradigmas culturales; el fenómeno de la globalización y la secularización; los graves problemas de violencia, pobreza e injusticia; la cultura de la muerte que afecta la vida en todas sus formas.</p>
+<p>186. Los obispos, como sucesores de los Apóstoles, junto con el Sumo Pontífice y bajo su autoridad, hemos aceptado la vocación de servir al Pueblo de Dios, conforme al corazón de Cristo Buen Pastor. Junto con todos los fieles y en virtud del bautismo, somos, ante todo, discípulos y miembros del Pueblo de Dios. Como todos los bautizados, y junto con ellos, queremos seguir a Jesús, Maestro de vida y de verdad, en la comunión de la Iglesia. Como Pastores, servidores del Evangelio, somos conscientes de ser llamados a vivir el amor a Jesucristo y a la Iglesia en la intimidad de la oración, y de la donación de nosotros mismos a los hermanos y hermanas, a quienes presidimos en la caridad. Es como dice San Agustín: con ustedes soy cristiano, para ustedes soy obispo.</p>
+<p>Los obispos hemos de procurar la unión constante con el Señor, cultivar la espiritualidad de la comunión con todos los que creen en Cristo y promover los vínculos de colegialidad que los unen al Colegio Episcopal, particularmente con su cabeza, el Obispo de Roma. No podemos olvidar que el obispo es principio y constructor de la unidad de su Iglesia particular y santificador de su pueblo, testigo de esperanza y padre de los fieles, especialmente de los pobres y necesitados; que su principal tarea es ser maestros de la fe, anunciadores de la Palabra de Dios y administradores de los sacramentos como servidores de la grey.</p>
+<p>Servimos a Cristo y a la Iglesia mediante el discernimiento de la voluntad del Padre, para reflejar al Señor en su modo de pensar, de sentir, de hablar y de comportarse entre los hombres. En síntesis, los obispos hemos de ser testigos cercanos y gozosos de Jesucristo, Buen Pastor (cf. Jn 10,1-18).</p>
+<p>Agradecemos a los Obispos eméritos que han servido con celo en la grey apostólica, que Iplavia pueda producir muchos frutos. Ellos mantienen profundos vínculos con las diócesis que les fueron confiadas, a las que están unidos por su caridad y oración.</p>
+<p>188. Los obispos, como pastores y guías espirituales de las comunidades a nosotros encomendadas, estamos llamados a hacer de la Iglesia una casa y escuela de comunión96. Como animadores de la comunión, tenemos la misión de acoger, discernir y animar carismas, ministerios y servicios en la Iglesia. Como padres y centro de unidad, nos esforzamos por presentar al mundo un rostro de la Iglesia en la cual todos se sientan acogidos como en su propia casa.</p>
+<p>Para todo el Pueblo de Dios, en especial para los presbíteros, buscamos ser padres, amigos y hermanos, siempre abiertos al diálogo.</p>
+<h3>LA VIDA RELIGIOSA</h3>
+<p>Resulta también de una llamada y por la cual se realiza una consagración total de sí mismo a Dios, amado sobre todas las cosas, consagrándose a su servicio y a su gloria por este título nuevo especial. Además, por esta vida los religiosos son fermento de las bienaventuranzas evangélicas y por la radicalidad del amor a Cristo, manifiestan con su vida que “Dios es su todo” (San Francisco de Asís). Que “Cristo es su Todo” (San Juan de la Cruz), pero también que todo lo que es y tiene el religioso y cada cristiano le pertenece a Cristo... (cf. 1 Cor. 3, 23). Y que todo lo creado no alcanza su plenitud sino en el reino de Cristo.</p>
+<p>La consagración religiosa es una “expresión más plena” de la consagración bautismal (cfr. Juan Pablo II, Exhort. Ap. Redemptionis Donum, parte III, 1984. En adelante: RD). Y constituye sobre la base sacramental del bautismo, una nueva vida, a través de la vivencia de los consejos evangélicos: la castidad, la pobreza y la obediencia, una vida que va más al ser y no al tener (cfr. RD 3, en la presentación). Aquí también Dios es el que llama a una vida de perfección:</p>
+<p>“Si quieres ser perfecto” (Mt 19, 21).</p>
+<p>“Vende lo que tienes, dáselo a los pobres” (ibid.).</p>
+<p>“Luego, ven y sígueme” (cfr. Mt 19, 21; Mc 10, 21).</p>
+<p>“Tendrás un tesoro en el cielo”. Esta será la recompensa. Cristo pobre aparece como modelo y ejemplo a seguir. El siendo rico se hizo pobre.</p>
+<p>La profesión religiosa “nueva sepultura en la muerte de Cristo” hace vivir al religioso una vida nueva y establece entre Dios y él la alianza particular del amor nupcial (RD 3, p. 2, en la presentación).</p>
+<p>Los tres votos:</p>
+<p>Pobreza: (cfr. Perfectae Caritatis 13. En adelante: PC). Para tener a Cristo por riqueza. La figura de Cristo pobre aparece como modelo y ejemplo a seguir.</p>
+<p>Castidad: (cfr. PC 12), Su motivo es dar un sí, a Cristo, con su cuerpo, con su corazón, con toda su capacidad de amar, con preferencia al sí, dado a un solo Amado.</p>
+<p>hombre o a una mujer. Un sí, ejemplos del Señor y recomendados por los que es un acontecimiento en la fe, para llevar el “género de vida virginal y pobre que Cristo escogió para sí y que la Virgen su Madre abrazó” (PAULO VI, Ex. Ap. Evangélica Testificatio 2). En adelante: ET; Cfr LG. 43-44.</p>
+<p>Ser religioso se puede decir descriptivamente es: ser llamado por Jesús, a vivir con él, consagrado totalmente a él, para servicio de él en la Iglesia (Cfr. LG. 44). Y su lugar que ocupa en la Iglesia no es intermedio entre la vocación clerical y la vocación laical, sino que proviene de una u otra como don especial del Espíritu..., (Cfr. LG. 43, p. 2). Más aunque no pertenece a la estructura jerárquica de la Iglesia, indiscutiblemente si pertenece a su vida y santidad (Cfr. LG. 44, p. 4). Y con su empeñada perseverancia deben manifestar la “abundante santidad de la Iglesia y para mayor gloria de la Trinidad, e indivisible, que en Cristo y por Cristo es la fuente y origen de toda santidad” (Cfr. LG. 47).</p>
+<p>Lo anterior nos da a entender que &quot;la norma última de la vida religiosa es el seguimiento de Cristo, tal como se propone en el Evangelio&quot;, ese ha de tenerse por una todos los institutos como regla suprema” (PC. 2 a). Por eso el objetivo esencial.</p>
+<p>Objetivo esencial del estado de vida religiosa es: seguir a Jesucristo, configurarse con él en cuanto Pobre, Virgen y Obediente, y así prolongar y perpetuar su presencia en la Iglesia y en el mundo, llevando ese modo de vida y existencia de Jesús... en esto consiste su misión irremplazable, en esto consiste su identidad. Es una representación “sacramental” visible, verdadera, real de Cristo. Pues los tres votos, se toman de la vida de Cristo, y solamente en él se descubre su sentido y contenido más hondo.</p>
+<p>Fin del seguimiento: La Santidad.</p>
+<p>“Seguir a Jesucristo, configurarse con él en cuanto Pobre, Virgen y Obediente” y así prolongar y perpetuar su presencia en la Iglesia y en el mundo, llevando ese modo de vida y existencia de Jesús... en esto consiste su misión irremplazable, en esto consiste su identidad. Es una representación “sacramental” visible, verdadera, real de Cristo.</p>
+<p>El n. 50 de la Lumen Gentium en el Párrafo 2, nos dice que &quot;cada uno según su estado y condición debe llegar a la perfecta Unión con Cristo o santidad”. Esto se alcanza por el cumplimiento de los votos y los carismas específicos de cada familia religiosa, por los que imitan un aspecto de la vida del Señor, y así lo presentan al mundo (LG. 46, p. 1). Además tiene un fin escatológico, anuncia el reino futuro. Tiene valor de signo. Ojalá que apreciemos este magnífico don.</p>
+<p>Este estado de vida consagrada, religiosa, es fuente perenne de la Iglesia. 5) EXIGENCIAS DEL SEGUIMIENTO.</p>
+<p>Este estado, que guía las ganas evangélicos, fundados sobre las palabras y el ejemplo de Cristo Rey (5).</p>
+<p>Especialmente y de una manera general a las exigencias de la vocación sacerdotal y religiosa, aunque algunas de ellas sean comunes a todas las vocaciones.</p>
+<h3>BIBLIOGRAFÍA.</h3>
+<p>- ARIVA SILVIO. Hacia una pedagogía vocacional, orientaciones y experiencias a la luz del concilio. Colección Hinneni (69), Ediciones Salamanca 1966.</p>
+<p>- BISIGNANO SANTO. Vocación, in Diccionario de espiritualidad del laico, TILdir., por ERManno Ancill., ed. O., Milano 1981.</p>
+<p>- PIRONIO EDUARDO. Diálogo con los laicos, ed. Patria Grande, Buenos Aires (Argentina) 1986. (En México exclusiva para las religiosas de la Cruz del Sagrado Corazón).</p>
+<p>- MARTIN CARLO. Se me dirigió la palabra, sus historias de vocación, ed. Paulinas 1991.</p>
+<h3>- MAGISTERIO DE LA IGLESIA.</h3>
+<h3>DOCUMENTOS CONCILIARES:</h3>
+<p>- Decreto &quot;Optatam totius&quot;.</p>
+<p>- Decreto &quot;Perfectae caritatis&quot;.</p>
+<p>- Decreto &quot;Presbyterorum ordinis&quot;.</p>
+<h3>NORMAS BÁSICAS PARA LA FORMACIÓN SACERDOTAL EN MÉXICO</h3>
+<p>(Motu proprio del Episcopado Mexicano), México, D.F. 1986.</p>
+<p>PAULO VI Exhortación Apostólica sobre la renovación de la vida consagrada &quot;Redemptoris perfectae caritatis&quot;, el día de la redención. A los religiosos y religiosas sobre su consagración a la vida del misterio de la redención, 1970.</p>
+<p>- Carta a todas las personas consagradas de las comunidades religiosas y de los institutos seculares con ocasión del Jubileo 1983.</p>
+<p>- Juan Pablo II Exhortación Apostólica &quot;Redemptoris sanguinis&quot;, el día del Jueves Santo, 1970.</p>
+<p>- Documento: Relaciones entre Obispos y Religiosos, de la Sagrada Congregación para los religiosos e institutos seculares, 1974. (En latín: Mutuas Relationes)</p>
+<p>FOLLETO DE FICHAS: Jesús llama, ed. Centro Vocacional Lasallista Pbro. Jesús Ortiz Ayala.</p>
+<p>El Adviento es tiempo de espera, de conversión, de esperanza.</p>
+<p>-Espera memoria de la primera y humilde venida del Salvador en nuestra carne mortal; espera súplica de la última y gloriosa venida de Cristo, Señor de la historia y Juez universal;</p>
+<p>-Conversión, a la cual invita con frecuencia la Liturgia de este tiempo, mediante la voz de los profetas y sobre todo de Juan Bautista:</p>
+<p>“Convertíos, porque está cerca el reino de los cielos” (Mt 3,2);</p>
+<p>-Esperanza gozosa de que la salvación ya realizada por Cristo (cfr. Rm 8,24-25) y las realidades de la gracia ya presentes en el mundo lleguen a su madurez y plenitud, por lo que la promesa se convertirá en posesión, la fe en visión, y “nosotros seremos semejantes a él porque le veremos tal cual es” (1 Jn 3,2).</p>
+<p>(Directorio sobre la Piedad Popular y la Liturgia 96)</p>
+<p>ATENCIÓN</p>
+<h3>DEL SEÑOR ARZOBISPO DE LEÓN A CON MOTIVO DEL ADVIENTO Y LA NAVIDAD</h3>
+<p>En el inicio del Adviento hemos entrado en un tiempo fuerte del año litúrgico. Tiempo de preparación para la llegada del “gran Dios y Salvador nuestro Jesucristo”. A este salvador bendito se vuelven confiadas nuestras miradas y en Él se afianza nuestra esperanza, nuestro gozo y nuestra paz.</p>
+<p>Descubrir la manera auténticamente religiosa de vivir el Adviento supone volver nuestra mirada a la Virgen Santísima. Ella supo recogerse para experimentar, paso a paso, el desarrollo del Hijo que se formaba en sus entrañas y orando lo esperó con ansia de madre y con piedad filial del creyente.</p>
+<p>Ante el vacío de un mundo que, comercializando estas fiestas, hasta casi pagánizándolas, debemos los cristianos rescatarlas y vivir la alegría que comunica el Espíritu Santo a quienes esperan a un Cristo vivo, cercano y capaz de llenar las aspiraciones más íntimas de nuestros corazones.</p>
+<p>Cuando la Navidad se ha preparado espiritualmente, nos dispone a escuchar el elocuente mensaje que desde el pesebre nos ofrece el Niño de Belén. Él nos habla del amor del Padre que “tanto amó al mundo que le envió a su Hijo para que todo el que crea en Él no perezca, sino que tenga vida eterna”. Jesús, nacido en un pesebre, nos revela el sentido de la vida humana, hecha para la entrega, para la sencillez, para la pobreza que nos hace humildes, para la solidaridad con los que nada tienen. Él vino para reunir a los hijos de Dios que estaban dispersos y nos invita a superar odios e injusticias, a aliviar los sufrimientos y dolores de los que nos rodean.</p>
+<h3>ADVIENTO EN TIEMPO DE RECOMENDACIONES CRISIS PASTORALES</h3>
+<p>El Adviento y la celebración navideña nos deben renovar en la experiencia de la esperanza cristiana que tanto necesita nuestro pueblo en estos momentos tan difíciles que estamos viviendo. En el corazón de muchos hay desaliento, frustración y pesimismo; ya nada esperan en la vida; no tienen confianza en nadie, ni en los políticos, ni en su familia, ni en sí mismos. Si su desesperanza es total, es señal de que tampoco tienen confianza en Dios. Esta es la peor situación que se puede vivir en una sociedad y en la vida personal; porque la falta de esperanza nos provoca derrotismo y nos deja sin entusiasmo para asumir las tareas de construir un mundo mejor, más justo y verdadero.</p>
+<p>Necesitamos esperanza que día a día nos mantenga en el camino. ¿Cuál podría ser hoy la base de una esperanza que no defrauda? Para quienes tenemos fe en Dios, la respuesta es clara: la esperanza se funda en Dios, en la seguridad de que Él está con nosotros, que Él es mayor que nuestros problemas, que “Él es nuestro Padre y nosotros somos el barro y hechura de sus manos”. El Papa Benedicto afirma: “Quien no conoce a Dios, aunque tenga múltiples esperanzas, en el fondo está sin esperanza, sin la gran esperanza que sostiene la vida”.</p>
+<p>La Navidad es la fiesta de la esperanza, porque nos asegura que Dios ha puesto su morada entre nosotros, se ha hecho uno de nosotros, conoce nuestras dificultades y toma partido a favor nuestro. De esta esperanza los creyentes sacamos fuerza para convertirnos en constructores de paz, para aportar generosamente ideas e iniciativas, tiempo y esfuerzo para construir una sociedad en la que se respire el oxígeno de la fraternidad y de la alegría para vivir.</p>
+<p>Ante la difícil situación económica que ya vivimos y que puede agudizarse más en el futuro inmediato, es necesario que seamos previsores, que no despilfremos los recursos que tenemos. Hay que saber descubrir las prioridades en la vida personal y familiar y atenderlas antes que gastar en cosas superfluas. En estos tiempos de fiestas navideñas oigamos la palabra del Apóstol Pablo que nos dice: “Nada de comilonas y borracheras”. Sepamos valorar las alegrías más íntimas y que se nos dan gratis: la convivencia familiar, el encuentro con los amigos, la belleza de la naturaleza, etc...</p>
+<p>Que la vivencia de las fiestas navideñas nos ponga en pie y nos dé las fuerzas para ser anunciadores, realizadores y testigos de la esperanza cristiana, sin miedos, sin turbaciones, sino adorando al Señor, Cristo Jesús, en nuestros corazones. Que podamos ser anunciadores de un Dios que se ha comprometido con nosotros y digamos que nosotros creemos en el triunfo de la verdad y de la justicia.</p>
+<p>¡Que la paz de Cristo habite en sus corazones!</p>
+<p>T José G. Martín Rábago</p>
+<p>Arzobispo de León € Cristo Rey = (9)</p>
+<h3>PARA MEDITAR</h3>
+<p>“La Virgen María, estirpe escogida de Israel”</p>
+<p>Reproducimos el Prefacio de la Misa “La Virgen María, estirpe escogida de Israel”, que se encuentra en la Colección de Misas de la Virgen María (Misa 1).</p>
+<p>Santa María, Hija de Adán, descendiente de Abraham, vara de Jesé</p>
+<p>En verdad es justo y necesario, es nuestro deber y salvación, darte gracias siempre y en todo lugar, Señor, Padre santo, Dios todopoderoso y eterno.</p>
+<p>Porque has querido que la Virgen María fuera la cumbre de Israel y el principio de la Iglesia, a fin de que todos los pueblos conocieran que la salvación viene de Israel y que tu nueva familia brota de ese tronco elegido. Ella es la vara de Jesé que ha dado como flor a Jesucristo, Señor nuestro.</p>
+<p>Ab es hija de Adán por su condición humana, y reparó con su inocencia la culpa de la madre Eva. Y descendiente de Abraham, porque creyendo concibió por la fe.</p>
+<p>La Santa Navidad</p>
+<p>Y fiesta universal</p>
+<p>Catequesis del Papa, miércoles 17 de diciembre.</p>
+<p>Queridos hermanos y hermanas:</p>
+<p>La Navidad es el encuentro con un recién nacido que llora en una cueva miserable. Comenzamos precisamente hoy los días del Adviento que nos preparan inmediatamente para el Nacimiento del Señor: estamos en la Novena de Navidad, que en muchas comunidades cristianas se celebra con liturgias ricas en textos bíblicos, todos ellos orientados a alimentar la espera por el nacimiento del Salvador. En efecto, toda la Iglesia concentra su mirada de fe en esta fiesta, ya cercana, disponiéndose, como cada año, a unirse al canto alegre de los ángeles, que en el corazón de la noche anunciarán a los pastores el extraordinario misterio del Emmanuel, el Creador que se ha hecho criatura, envuelto en pañales y acostado en un pobre pesebre (cf. Lc 2,12-14).</p>
+<p>Contemplándolo en el pesebre, ¿cómo no pensar en tantos niños que también hoy, en muchas regiones del mundo, nacen en una gran pobreza? ¿Cómo no pensar en los recién nacidos que no son acogidos sino rechazados. En los que no logran sobrevivir por falta de fidelidad y atenciones? ¿Cómo no pensar también en las familias que quisieran tener la alegría de un hijo y no ven cumplida esta esperanza?</p>
+<p>Por desgracia, por el impulso de un consumismo hedonista, la Navidad corre el riesgo de perder su significado espiritual para reducirse a una mera ocasión comercial de compras e intercambio de regalos. Sin embargo, en realidad, las dificultades, las incertidumbres y la misma crisis económica que en estos meses está afectando a muchos países no deben impedirnos celebrar con alegría el nacimiento del Niño Jesús.</p>
+<p>viviendo tantas familias, y que afecta a toda forma parte de la liturgia de la Navidad. En efecto, en ella se encuentra la expresión más auténtica y la síntesis más profunda de esta fiesta y del fundamento de su alegría. San Juan escribe: «Et Verbum caro factum est et habitavit in nobis», «Y el Verbo se hizo carne y habitó entre nosotros» (Jn 1, 14).</p>
+<p>Así pues, en Navidad no nos limitamos a conmemorar el nacimiento de un gran personaje; no celebramos simplemente y en abstracto el misterio del nacimiento del hombre o en general el misterio de la vida; tampoco celebramos sólo el inicio de una nueva estación. En Navidad recordamos algo muy concreto e importante para los hombres, algo esencial para la fe cristiana, una verdad que san Juan resume en estas pocas palabras: «El Verbo se hizo carne».</p>
+<p>Se trata de un acontecimiento histórico que el evangelista san Lucas se preocupa de situar en un contexto muy determinado: en los días en que César Augusto emanó el decreto para el primer censo, cuando Quirino era ya gobernador de Siria (cf. Lc 2, 1-7). Por tanto, en una noche fechada históricamente se verificó el acontecimiento de salvación que Israel esperaba desde hacía siglos. En la oscuridad de la noche de Belén se encendió realmente una gran luz: el Creador del universo se encarnó, uniéndose indisolublemente a la naturaleza humana, siendo realmente «Dios de Dios, luz de luz» y al mismo tiempo hombre, verdadero hombre.</p>
+<p>Todo esto, sin embargo, no basta para captar en su plenitud el valor de la fiesta que nos estamos preparando. Nosotros sabemos que en ella se celebra el acontecimiento central de la historia: la Encarnación del Verbo divino para la redención de la humanidad. San León Magno, en una de sus numerosas homilías navideñas, exclama: «Exultemos en el Señor, queridos hermanos, y abramos nuestro corazón a la alegría más pura, porque ha amanecido el día que para nosotros significa la nueva redención, la antigua preparación, la felicidad eterna. Así, en el ciclo anual, se renueva para nosotros el elevado misterio de nuestra salvación, que, prometido al principio y realizado al final de los tiempos, está destinado a durar sin fin» (Homilía XXI). San Pablo comenta muchas veces esta verdad fundamental en sus cartas. Por ejemplo, a los Gálatas escribe: «Al llegar la plenitud de los tiempos, envió Dios a su Hijo, nacido de mujer, nacido bajo la Ley (...) para que recibiéramos la filiación adoptiva» (Ga 4, 4-5). En la carta a los Romanos pone de manifiesto las lógicas y exigentes consecuencias de este acontecimiento salvador: «Si somos hijos (de Dios), también somos herederos, herederos de Dios y coheredores de Cristo, ya que sufrimos con él, para ser también con él glorificados» (Rm 8, 17). Pero es sobretodo san Juan, en el Prólogo del cuarto Evangelio, quien medita profundamente en el misterio de la Encarnación. Y por eso en los tiempos más antiguos el Prólogo (2 Jn 1:1) se convierte en un himno a la Encarnación.</p>
+<p>Nosotros. El Logos nos conoce, nos llama, nos guía. No es una ley universal, en la que nosotros desarrollamos algún papel; es una Persona que se interesa por cada persona: es el Hijo del Dios vivo, que se ha hecho hombre en Belén.</p>
+<p>A muchos hombres, y de algún modo a todos nosotros, esto parece demasiado hermoso para ser cierto. En efecto, aquí se reafirma: sí, existe un sentido, y el sentido no es una protesta impotente contra lo absurdo. El Sentido tiene poder: es Dios. Un Dios bueno, que no se confunde con un poder excelso y lejano, al que nunca podríamos llegar, sino un Dios que se ha hecho nuestro prójimo, muy cercano a nosotros, que tiene tiempo para cada uno de nosotros y que ha venido a quedarse con nosotros.</p>
+<p>Entonces surge espontáneamente la pregunta: «¿Cómo es posible algo semejante? ¿Es digno de Dios hacerse niño?». Para intentar abrir el corazón a esta verdad que ilumina toda la existencia humana, es necesario plegar la mente y reconocer la limitación de nuestra inteligencia. En la cueva de Belén Dios se nos muestra «niño» humilde para vencer nuestra soberbia. Tal vez nos habríamos rendido más fácilmente frente al poder, frente a la sabiduría; pero él no quiere nuestra rendición; más bien apela a nuestro corazón y a nuestra decisión libre de aceptar su amor. Se ha hecho pequeño para liberarnos de la pretensión humana de grandeza que brota de la soberbia; se ha encarnado libremente para hacernos a nosotros verdaderamente libres, libres de amarlo.</p>
+<p>Preparémonos, por tanto, para la Navidad con humildad y sencillez, disponiéndonos a recibir el don de la luz, alegría y la paz que irradian de este misterio. Acojamos el Nacimiento de Cristo como un acontecimiento capaz de renovar hoy nuestra vida. Que el encuentro con el Niño Jesús nos haga personas que no piensen sólo en sí mismas, sino que se abran a las expectativas y necesidades de los hermanos. De esta forma nos convertiremos también nosotros en testigos de la luz que la Navidad irradia sobre la humanidad del tercer milenio.</p>
+<p>Pidamos a María santísima, tabernáculo del Verbo encarnado, y a san José, testigo silencioso de los acontecimientos de la salvación, que nos comuniquen los sentimientos que ellos tenían mientras esperaban el nacimiento de Jesús, de modo que podamos prepararnos para celebrar santamente la próxima Navidad, en el gozo de la fe y animados por el compromiso de una conversión sincera.</p>
+<p>¡Feliz Navidad a todos!</p>
+<p>L&#x27;osservatore Romano. Página 20. Del 20 al 26 de diciembre del 2008</p>
+<p>El Papa Benedicto XVI ha creado la nueva Diócesis de Gómez Palacio en México el 25 de noviembre del año 2008.</p>
+<p>Navidad no es un bullicio público ni es licor; No es parranda ni es vanidad; Navidad es el inicio de amistad, paz y amor. Navidad no es un festín ni tristeza; Navidad es el inicio y es el fin que da pan; Su mensaje es: Salvación.</p>
+<p>El Papa ha tenido a bien nombrar como primer Obispo de esta nueva Diócesis a monseñor José Guadalupe Torres Campos, quien fungía como Obispo auxiliar de Ciudad Juárez.</p>
+<p>Su excelencia Torres Campos nació en la ciudad de León, Guanajuato el 19 de enero de 1960. Sus estudios eclesiásticos los realizó en el seminario mayor de León, Gto., y continuó su formación sacerdotal en Roma, donde obtuvo la Licenciatura en historia de la Iglesia en la Universidad Gregoriana.</p>
+<p>Su mensaje es: Salvación.</p>
+<p>Los deseos De La Madre Eloina Aguilar Hernández. Ahora en su nuevo ministerio pastoral le pedimos a Dios que lo asista con su Espíritu para que pueda dirigir los feligreses de la nueva Diócesis de Gómez Palacio. Desde este monumento de Cristo Rey le acompañamos con nuestra oración y participamos de su alegría.</p>
+<p>Invitamos a monseñor José Guadalupe Torres Campos a venir como peregrino con sus feligreses a esta santa Montaña de Cristo Rey.</p>
+<p>E E A OS PRA A nacida pa a zea - q &#x27; - 2: E A E .- , Pur Sl de 2 É se el debi aa. A A E, . Ñ a «nh dE ] — EL o gos A o o Pan y z. &#x27; y y 34 AS PRD b A E E: , S 1 . P porn A Mo FER. CI HA “E E MZ A + F - d L. E Es Po p | | ! gn E NES TE | dl 4 o de k A lo «És &gt; ds E ad se =&gt; tl SABADO 1 Zacatecas. L. ANIVERSARIO DE LA CORONACION Empleados y Obreros de la fábrica de PONTIFICIA DE NUESTRA REINA Y calzado &quot;Safari&quot;, de León, Gto., MADRE SANTA MARÍA DE encabezados por la Lic. Laura Elena GUADALUPE. Ramírez. Misa a las 12:00 p.m. Rev. Mons. Lic. Armando Ortiz Aguirre, Línea de Autobuses &quot;Centro con fieles de la Parroquia de San Estación», encabezada por los Sres. Maximiliano Ma Kolbe, de León, Gto. José de Jesús Mejía y Alejandro Vargas Díaz, de León, Gto. Sr. Cura Lic. Eduardo Contreras Gutiérrez, con fieles de la Parroquia de San Pío X, de León, Gto. Camiones Diesel, S.A., encabezados por el Sr. Lic. Joel Camarena. Sr. Cura Rubén Porras Penilla, con fieles de la Parroquia de Santa Rosa de Lima, León, Gto., Misa 12:00 hrs. SAN FRANCISCO GALILEO, EL PUEBLITO, QRO. COLONIA LOS ANGELES, QUERETARO, QRO.</p>
+<h3>SAN JUAN BAUTISTA, NESTIPAC, D.F.</h3>
+<h3>NTRA. SRA. DE GUADALUPE, COL EL RODEO, D.F.</h3>
+<h3>SR. CURA FRANCISCO GONZÁLEZ RAMOS,</h3>
+<h3>SECCIÓN SANTA CATARIANA, MPIO. DE LEÓN</h3>
+<h3>SAN FELIPE, GTO.</h3>
+<h3>SECCIÓN LA RESURRECCIÓN DE CRISTO</h3>
+<h3>COL. CONSTITUCIÓN 1917, IXTAPALAPA, D.F.</h3>
+<h3>SR. CURA CRUZ FELIPE ESPARZA RAMÍREZ,</h3>
+<h3>SAN ANTONIO DE PADUA, TEUTITLÁN, EDO. DE MÉXICO</h3>
+<h3>CARMEN ZAPOPAN, JALISCO</h3>
+<h3>DOMINGO 2</h3>
+<h3>CONCELEBRACIÓN EUCARÍSTICA EN NICOLAS DE TOLENTINO, DEL MINERAL DEL CUBO, GTO.</h3>
+<h3>SR. CURA MARTÍN CHÁVEZ CAMARILLO,</h3>
+<h3>CON FIELES DE LA PARROQUIA DE SAN JUDAS TADEO, LA JOYITA, DE SILAO, GTO., MISA A LAS 1:00 P.M.</h3>
+<h3>DOMINGO 2</h3>
+<h3>SR. CURA ENRIQUE HERNÁNDEZ ESPINOSA,</h3>
+<h3>CON FIELES DE LA CUASI PARROQUIA DE SAN NICOLAS DE TOLENTINO, DEL MINERAL DEL CUBO, GTO.</h3>
+<h3>R. P. MIGUEL GALVÁN CÓRDOVA,</h3>
+<p>SR. CURA IGNACIO VIRGEN BUEN ROstro Y</p>
+<h3>SR. PEDRO DELGADILLO GALINDO,</h3>
+<h3>CON LOS SOBREVIVIENTES DE LA GUARDIA NACIONAL CRISTO REY, DE GUADALAJARA, JALISCO</h3>
+<h3>MISA A LAS 9:00 HRS.</h3>
+<h3>EXCMO. Y REVMO. SR. OBISPO DR. D. RAFAEL GARCÍA GUERRERO,</h3>
+<h3>GONZÁLEZ, DEL EXCMO. Y REVMO. SR. OBISPO DR. D. EMETERIO VALVERDE TELLEZ,</h3>
+<h3>DEL EXCMO. Y REVMO. SR. OBISPO DR. D. MANUEL MARTIN DEL CAMPO,</h3>
+<h3>DE MONS. AMADO VILLANUEVA, DEL SR. PBRO. D. JOSE ASCENSION BETANCOURT,</h3>
+<h3>DEL ILMO. SR. CANGO. D. LUIS CABRERA CRUZ,</h3>
+<p>DEL ARQ. NICOLÁS MARISCAL PIÑA, DE LA MANUFACTURERA DE CALZADO &quot;7 LEGUAS&quot;, DE LEÓN, GTO., ENCABEZADOS POR EL SR. JAIME MARIQUEZ BARAJAS.</p>
+<h3>FEDERACIÓN DE LA INDUSTRIA DE LA MASA Y LA TORTILLA, DEL EDO. DE GUANAJUATO,</h3>
+<h3>DIOCESIS DE TACAMBARO, MICH., PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. D. JOSE LUIS CASTRO MEDELLIN,</h3>
+<h3>ORGANIZACIÓN A CARGO DEL VICARIO GENERAL PBRO. JOSÉ DÍAZ BARRIGA SALGADO.</h3>
+<h3>SRA. LOURDES MERCADO, CON LA DANZA REBOTE, DE DURANGO, DGO.</h3>
+<h3>SR. CURA JUAN GUADALUPE PLASCENCIA,</h3>
+<h3>CON FIELES DE LA PARROQUIA CRISTO REY</h3>
+<h3>SRA. ROSALBA PIMENTEL AREOLA, CON PEREGRINOS DE GUADALAJARA, JALISCO</h3>
+<p>González León», Lagos de Moreno: VIGILIA A LAS 10 DE LA NOCHE</p>
+<h3>OCOTLÁN, JAL. VIGILIA A LAS 10 DE LA NOCHE</h3>
+<h3>MIERCOLES 5</h3>
+<p>TEHUACÁN, PUE. Sr. Cura Agustín Mariscal Calderón, LUNES 3 con fieles de la Parroquia de San Felipe de Jesús, Guadalajara, Jal.</p>
+<p>Sr. Cura Leonardo Lona Patlán, con fieles de la Parroquia de la Purísima Concepción del Coecillo, León, Gto. Sr. Cura Valentín Garibay, con fieles de la Parroquia del Señor de Santa Teresa, Silao, Gto.</p>
+<p>Sr. Cura Genaro Velásquez López, con fieles de la Parroquia de Nuestra Señora de Guadalupe, Col. Casa Blanca, León, Gto. VIGILIA A LAS 10 DE LA NOCHE</p>
+<h3>SAN LORENZO, CUAPIAXTLA, TLAX. EL DIVINO SALVADOR, GUADALAJARA, JAL.</h3>
+<p>MARTES 4 Sr. Cura Ignacio Canchola Magaña, con fieles de la Parroquia del Señor de los Milagros, León, Gto.</p>
+<p>JUEVES 6 DIOCESIS DE APATZINGÁN, MICH. PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. D. MIGUEL PATIÑO VELAZQUEZ, Organización a cargo del: Sr. Pbro Uriel Ochoa Pimente Mis e</p>
+<p>San Francisco de Asís, Xichú, Gto.</p>
+<p>RR. PP. Mercedarios de la Zona del Bajío, Querétaro, Valle de Santiago, Sr. Cura Mario Alejandro Chacón; Lagos de Moreno y Celaya, Garnica de la Parroquia de Santa María Organización a cargo de Fray Germán de Guadalupe, de Nuevo Valle de Mejía Banda. Misa a las 11:00 a.m.</p>
+<p>Sr. Cura Ernesto Flores Guerrero, con fieles de la Parroquia de Ntra. Sra. de los Milagros, de Ojo Caliente, Zac.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<p>Sr. Cura Gerardo Ignacio Baltasar, con fieles de la Parroquia del Sagrado Corazón de Jesús, de Ibarra, Mpio. de Los Lagos, Jal.</p>
+<h3>PÁTZCUARO, MICHOACÁN</h3>
+<h3>VIERNES 7 VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<p>Sr. Cura Mariano Del Ángel Pérez, con fieles de la Parroquia de San Rafael Arcángel, de Cd. Guadalupe, N. L. Misa a las 6:00 a.m.</p>
+<h3>DIOCESIS DE IRAPUATO, GTO., PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. JOSÉ DE JESÚS BONILLA STAACKER</h3>
+<p>MARTÍNEZ CEPEDA, Organización de fieles de la Parroquia de San Pedro cargo del Sr. Pbro. J. Luz López Pérez, Piedragorda, de Ciudad Manuel Doblado, Gto.</p>
+<p>Misa 12:00 hrs. Doblado, Gto., Misa a las 12:00 hrs.</p>
+<p>Sr. Cura Gonzalo Hernández con fieles de la Parroquia de San José del Consuelo de León, Gto.</p>
+<p>Francisco del Rincón, Gto., Misa a las 12:00 hrs.</p>
+<p>Sr. Cura Andrés Vázquez Sánchez con fieles de la Parroquia de Nuestra Señora de la Merced y San Juan Evangelista, de San Juan de la Puerta, Mpio. de Cd. Manuel Doblado, Gto., Misa a las 12:00 hrs.</p>
+<p>Sr. Cura J. Guadalupe Domínguez con fieles de la Parroquia de la Purísima Concepción, de Purísima de Bustos, Gto., Misa a las 12:00 hrs.</p>
+<p>Sr. Cura Jesús Sánchez Alcántara con fieles de la Parroquia del Sagrado Corazón, de El Maguey, de San Francisco del Rincón, Gto., Misa a las 12:00 hrs.</p>
+<p>Sr. Cura José de Jesús Reyes Romero con fieles de la Parroquia de Nuestra Señora de la Merced, de León, Gto., Misa 10:00 a.m.</p>
+<p>Sr. Cura Esaúl Padilla Méndez con fieles de la Parroquia de San Francisco de Asís, de San Francisco del Rincón, Gto., Misa a las 12:00 p.m.</p>
+<p>Sr. Cura Andrés de Jesús Torres Salas con fieles de la Parroquia de Nuestra Señora de los Dolores, de Irapuato, Gto., Misa 11:00 a.m.</p>
+<p>Sr. Cura Julio Ledesma Mora con fieles de la Parroquia de San Juan Bautista El Paisaje, de León, Gto., Misa a las 12:00 hrs.</p>
+<p>Sr. Cura Ignacio Dorantes Infante con fieles de la Parroquia de Ntro. Padre Jesús, de Jesús del Monte, de San Francisco del Rincón, Gto., Misa a las 12:00 hrs.</p>
+<p>Sra. Patricia Tinajero Rodríguez con trabajadores acompañantes de &quot;Casa Webster&quot; de Iztapaluca, Edo. de Méx., Misa 7:00 hrs.</p>
+<p>Sr. Cura Juan Manuel Chagolla López con fieles de la Parroquia del Señor de la Salud, de San Francisco del Rincón, Gto., Misa a las 12:00 hrs.</p>
+<p>Sres. Emilio Sánchez Villa, María Alvarado y Teresa Alvarado con peregrinos de Sahuayo, Mich.</p>
+<p>Sr. Cura Jesús Salvador Rodríguez Santos con fieles de la Parroquia del Señor de la Buena Muerte, de Sáuz de Armenta, Mpio. de San Francisco del Rincón, Gto., Misa a las 12:00 hrs.</p>
+<p>Sres. Ma. Del Carmen Sánchez, Antonia García Moreno y Antonio Sánchez con peregrinos de Azuayo, Mich.</p>
+<p>VIGILIA A LAS 10 DE LA NOCHE: WOR Cristo Rey</p>
+<h3>HUAJUMBARO, MICH.</h3>
+<h3>CANTEPEC, MICH.</h3>
+<h3>MONTAÑA DE CRISTO REY, TURNO II</h3>
+<h3>LEÓN, GTO.</h3>
+<h3>LA PURÍSIMA CONCEPCIÓN, SANTA PAULA</h3>
+<h3>MARIA NATIVIDAD, TECOAC, EDO. DE PUEBLA</h3>
+<h3>SAN JUAN BAUTISTA TEXCOCO, EDO. DE MÉXICO</h3>
+<h3>TEOTIHUACAN, EDO. DE MÉXICO</h3>
+<h3>LA TRANSFIGURACIÓN, D.F.</h3>
+<h3>CATEDRAL DE CORPUS CHRISTI, MEXICALTZINCANCILNEPANTLA, EDO. DE MÉXICO</h3>
+<h3>DOMINGO 9 DE FEBRERO</h3>
+<p>Sr. Cura Jorge Raúl Villegas Chávez, con fieles de la Parroquia de San Juan Bautista de la Salle, de León, Gto. Misa a las 2:00 p.m.</p>
+<p>Sr. Cura Roberto Muñoz Sánchez, con fieles de la Parroquia de Santa Margarita María de Alacoque, de León, Gto.</p>
+<p>Sr. Cura Vicente Padilla Cardona, con fieles de la Parroquia del Señor de la Salud, de León, Gto.</p>
+<p>Sr. Cura Perfecto Castillo Padrón, con fieles de la Parroquia de San Pedro Apóstol de Irapuato, Gto., Misa a las 11:00 a.m. encabezados por el Sr. Fidel Alejandro Camacho Camacho. Misa a las 7:30 p.m.</p>
+<p>Asociación Nacional de Trabajadores Guadalupanos encabezados por sus dirigentes Sra. Ma. Concepción Rodríguez, Sr. Cirilo Mercado Ortega y Francisco Rosales Ríos, de Durango, Dgo. Unión de Propietarios de Farmacias, de León Gto. A.C., encabezados por el Dr. Alfredo Montelongo F.</p>
+<p>Gremio de Impresores de San Buenaventura Toluca Edo. de México</p>
+<p>Cristo Rey</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<h3>SECCIÓN SAN JUAN BAUTISTA, SAN JUAN DE LOS LAGOS, JAL.; SAN FRANCISCO DE ASIS, XICHU, GTO.</h3>
+<h3>TLALPUJAHUA, MICH., VALLE DE SANTIAGO, GTO.</h3>
+<h3>TECOTITLÁN: SR. BASILIO RODRÍGUEZ. JERECUARO, GTO.</h3>
+<h3>JUEVES 13 LUNES 10</h3>
+<p>Sr. Cura Pablo Camargo López, con fieles de la Parroquia de San Pablo Santo, de León, Gto. Unión de voceros, encabezados por el Sr. Antonio Muñoz Torres, de Silao, Gto.</p>
+<p>Sr. Cura Moisés Sánchez Ramírez, con peregrinos de la Parroquia del Espíritu Apóstol, de León, Gto. Voceros de Silao, Gto. Misa a las 9:00 a.m.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<h3>MONTAÑA DE CRISTO REY JUNGAPEO, MICH.</h3>
+<p>Sr. Cura Apolinar Torres Ortiz, con fieles de la Parroquia de San Martín de Porres y fieles del Templo del Santo Niño de Atocha, de León, Gto.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<h3>HONORARIAS DE SAN JUAN BOSCO, SAN JUAN DE LOS LAGOS, JAL.</h3>
+<p>Sr. Cura Clemente Prado Rico, con fieles de la Parroquia de San José, de la Quemada Mpio. de San Felipe, Gto.</p>
+<h3>MARTES 11</h3>
+<p>Sr. Cura Jesús Corona López, con fieles de la Parroquia del Señor de las Buenas Obras, de San Cristóbal, de Irapuato, Gto.</p>
+<p>Sr. Cura Francisco Reyes Padilla, con fieles de la Parroquia de Santiago Apóstol, de Silao, Gto., Misa 12:00 hrs.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<h3>NTRA. SRA. DEL BUEN CAMINO, GUADALAJARA, JAL.</h3>
+<p>Sr. Cura Clemente Prado Rico, con fieles de la Parroquia de San José, de la Quemada Mpio. de San Felipe, Gto.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<p>ZAPOPAN, JAL. Calvillo, Gto., Misa a las 11:00 a.m. Colegio Hispanoamericano, de León, SAN CRISTÓBAL, Gto. Misa a las 10:00 hrs.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<h3>MIERCOLES 12</h3>
+<h3>DIOCESIS DE MEXICALI, B.C.</h3>
+<h3>HORARIAS DEL ESPIRITU SANTO, LEON, GTO.</h3>
+<h3>SABADO 15</h3>
+<p>La ciudad Valles, S.L.P., fue sede de la Asamblea Nacional de Adoración Nocturna. Su mismo Obispo les dio la bienvenida antes de comenzar a presidir la Sagrada Eucaristía y participar en todos los actos de la Asamblea Nacional Diocesana de la Adoración Nocturna.</p>
+<p>Con gusto recibimos al R.P. José Isaak Altamirano, S.S., presidente nacional de la Adoración Nocturna Mexicana, y al Excmo. Mons. Roberto Octavio Balmori Cinta, quien acompañó con gusto y alegría esta Asamblea, donde se toman acuerdos para que la Adoración Nocturna Mexicana se mantenga y renueve para continuar orando por nuestra Patria y todo el Mundo.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<h3>PEREGRINACIONES DURANTE EL DÍA</h3>
+<p>SAN DIEGO DE ALEJANDRIA, JAL. CONSTITUCION, ZAPOPAN, JAL. ATITALAQUIA, HGO. CHAMAPA, EDO. DE MEX. MAGDALENA CONTRERAS, D.F.</p>
+<p>(&gt;) (O Cristo Rey</p>
+<h3>NTRA. SRA. DE SAN JUAN DE LOS LAGOS, JAL.,</h3>
+<h3>LOMAS DE CASABLANCA, QRO.</h3>
+<p>SAGRADO CORAZÓN DE JESÚS CAPUCHINAS, QRO., SECCIÓN SEDE DIOCESIS DE SAN JUAN DE LOS LAGOS, JAL., PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. D. JAVIER NAVARRO RODRIGUEZ,</p>
+<h3>DOMINGO 16</h3>
+<p>VIGILIA A LAS 10 DE LA NOCHE: Organización a cargo del Sr. Cura Francisco Tovar Míreles. Misa a las 10:00 hrs.</p>
+<h3>SECCIÓN DE SANTA MARÍA VARILITAS, EL REFUGIO, JAL.</h3>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<p>LUNES 17</p>
+<h3>&gt; POPOTLA, D.F.</h3>
+<p>RR. PP. Carmelitos de San Luis Potosí, &gt; SAN MIGUEL CHALMA, EDO. DE MEX.</p>
+<h3>NTRA. SRA. DEL CARMEN, COL. EL TENAYO, TLAQUEPAQUE, D.F. SECCIÓN LA MADRE DE DIOS, GUADALAJARA, JAL.</h3>
+<h3>VIGILIA A LAS 10 DE LA NOCHE: JUEVES 20</h3>
+<h3>&gt; JUAN MARTÍN, GTO.</h3>
+<p>DIOCESIS DE ATLACOMULCO, MEX., PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. D. CONSTANCIO MIRANDA WECKMANN, Organización a cargo del Pbro. Eduardo Gallegos Flores, Misa 11:00 a.m.</p>
+<h3>&gt; SANTA MONICA LABARCA, JAL.</h3>
+<p>NTRA. SRA. DE GUADALUPE, ESTACIÓN DE PENJAMO, GTO. Sr. Cura Cirilo Olvera Pérez, con fieles de la Parroquia de San Felipe de Jesús, de León, Gto.</p>
+<h3>MIERCOLES 19</h3>
+<p>Sr. Cura Carlos Muñoz Hernández, con las Asociaciones de la Parroquia de San Sebastián Mártir, y los Colegios &quot;Diez de Sollano&quot; y &quot;Juana de Asbaje&quot;, de León, Gto.</p>
+<p>ARQUIDIOCESIS DE GUADALAJARA, JAL., PRESIDIDA POR EL EXCMO. Y REVMO. SR. CARDENAL DR. D. JUAN SANDOVAL IÑIGUEZ., Sres. Vicarios de Pastoral y Decanos, con representaciones de todas las Parroquias y Capellanías, Casas de Ejército y Marina.</p>
+<h3>MARTES 18</h3>
+<p>VIGILIA A LAS 10 DE LA NOCHE: Sr. Pbro. Antonio Esquivel Pacheco, con peregrinos de la Parroquia de Cristo Rey</p>
+<p>Nuestra Señora de Guadalupe</p>
+<p>SAN BARTOLO TENAYUCA, D.F. Palosolo Mpio. De Huisquilucan, Méx. Misa a las 11:00 a.m.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE: SÁBADO 22</h3>
+<h3>SAN PABLO XALPA, TLALNEPANTLA, EDO. DE MÉX.</h3>
+<p>SAN MIGUEL DE CUYUACAN, JAL. Sr. Cura Juan González Hernández, PARROQUIA DEL PERPETUO SOCORRO, LEÓN, GTO.</p>
+<p>VIERNES 21 Sr. Cura Pascual López Marquez, con fieles de la Parroquia de la Divina Redentor (El Mezquitito), de León, Gto. Peregrinación de Seminaristas, de Guadalajara, Jal.</p>
+<p>Misa a las 11:00 a.m.</p>
+<p>VIGILIA A LAS 10 DE LA NOCHE: SAN JOSE DEL TANQUE, GTO. LAS PINTAS TLACUEPAQUE, JAL. AMASCALA, QRO. DIOCESANA DE TULA, HGO.</p>
+<p>Providencia, León, Gto. Jesús Ortiz Ayala, primer capellán; Sr. Cura José Cruz Cordero Ortiz, con acompañamiento de los padres Gerardo Fieles de la Parroquia de San Francisco Chagolla, segundo capellán y el padre Luis Moya, Zac., Saúl Cruz Jiménez, tercer capellán y el coro de las Madres de la congregación &quot;Corde Jesu&quot;. Participan también las secciones adoradoras del día y la multitud de fieles que llegan al santuario para participar en esta Solemnidad de Cristo Rey.</p>
+<h3>SOLEMNIDAD DE CRISTO REY</h3>
+<p>En la noche de estas Vísperas Festinas, se encienden los juegos pirotécnicos donde sobresale la quema del castillo. Termina la vigilia con la Misa de Media Noche.</p>
+<p>VIGILIA A LAS 10 DE LA NOCHE: - APASEO EL GRANDE, GTO. - BUENAVISTA TUTITLÁN, MEX. en ca - PARROQUIA DE NTRA. SRA. DEL CARMEN 2ª SECCIÓN - EL BUEN PASTOR, ZAPOPAN, JAL. - NTRA. SRA. DEL SAGRADO CORAZÓN Y SAN CAYETANO, D.F. - SANTA MARÍA DE LA ASCENSión, JALOTEPEC, VER.</p>
+<h3>DOMINGO 23 GRAN DIA DE LA PAZ</h3>
+<p>Mañanitas coro de las hermanas religiosas, congregación “Corde Jesu” Salva de cohetes. Misa de aurora.</p>
+<p>HOMENAJE NACIONAL DE LA BENEMERITA ACCIÓN CATÓLICA, presidida por los directivos centrales, asistentes eclesiásticos y Comités Diocesanos Parroquiales de León y de la República Mexicana. A partir de las 8:00 a.m. habrá Misa en el Santuario de la Reina, cada hora.</p>
+<p>10:30 a.m. Hora Santa de Gloria.</p>
+<p>12:00 Hrs. EN EL SANTUARIO DE CRISTO REY, EN EL ALTAR DE LA PATRIA,</p>
+<p>SOLEMNISIMA MISA CELEBRADA POR EL EXCMO. Y REVMO. SR. DR. D. JOSE G. MARTÍN RABAGO, ARZOBISPO DE LA ARQUIDIOCESIS DE LEÓN.</p>
+<p>(Con participación del Coro de la Escuela de Música de la ciudad de León, Gto.)</p>
+<p>Sr. Cura Sergio González López, con fieles de la Parroquia de San Cayetano (Confesor), de Irapuato, Gto.</p>
+<p>Sra. Arcelia Osorio, con Peregrinos de Orta Ron.</p>
+<p>Lagos de Moreno, Jalisco.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE:</h3>
+<p>Sra. Julia Márquez Bautista, con peregrinos de SAN LUCAS TEPETIACALCO, San José de Tula, Hgo., TLALNEPANTLA, EDO. DE MEX.</p>
+<p>VIGILIA A LAS 10 DE LA NOCHE: MIERCOLES 26 CHIMALHUANATENGO, EDO. DE MEX. Sr. Pbro. Jesús Ortiz Ayala, con sacerdotes, religiosas, empleados y obreros del Santuario de Cristo Rey.</p>
+<p>LUNES 24: Comerciantes ambulantes de la Montaña de Cristo Rey.</p>
+<p>DIOCESIS DE CELAYA, GTO., PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. D. LAZARO PEREZ JIMENEZ, organización a cargo del Padre Manlio Nahum Flores Misa en CHIMALHUANATENGO, EDO. DE MEX.</p>
+<p>JUEVES 27: Sra. Graciela Vázquez Camacho, con peregrinos de Celaya, Gto. Misa a las 11:00 a.m.</p>
+<p>DIOCESIS DE ATLACOMULCO, MEX., PRESIDIDA POR EL EXCMO. Y REVMO. SR. OBISPO DR. D. CONSTANCIO MIRANDA WECKMANN, organización a cargo del Pbro. Eduardo Gallegos VIGILIA A LAS 10 DE LA NOCHE: SANTA ANA JILOTZINGO, EDO. DE MEX.</p>
+<p>Flores, Misa 11:00 a.m. para participar de la santa Misa y al final encender la antorcha que llevarán a sus pueblos como signo de</p>
+<p>VIGILIA A LAS 10 DE LA NOCHE: la luz de Cristo Rey. Los fieles de las diversas comunidades según testimonio de los mismos peregrinos,</p>
+<h3>SAN ANTONIO DE PADUA, PARROQUIA SAGRADOS CORAZONES, COL. ORIENTAL.</h3>
+<p>VIERNES 28. Cristo los ilumine.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE: PEREGRINACIÓN DE SAN JUAN DE LA VEGA</h3>
+<p>IXTLAHUACAN DE LOS MEMBRILLOS, JAL. El día recibimos a una multitud de peregrinos procedentes de la comunidad cristiana de san Juan de la Vega Gto. Los encabezados por el capellán Gumersindo quien presidió la santa Misa en el Santuario del Rey a las 9:00 a.m., fue una verdadera manifestación de religiosidad popular que culminó en la celebración litúrgica.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE: CHICHIMEQUILLAS, QRO.</h3>
+<h3>SAN ANTONIO DE PADUA, TULTITLÁN, EDO. DE MEX.</h3>
+<h3>DOMINGO 30</h3>
+<p>Sr. Cura José Manuel Rivera Ortega, de la Parroquia de San Miguel Arcángel, de San Felipe, Gto., con las Milicias de San Miguelito.</p>
+<h3>VIGILIA A LAS 10 DE LA NOCHE: ARQUIDIOCESIS DE OAXACA, OAX.</h3>
+<h3>PEREGRINACIONES DE DICIEMBRE.</h3>
+<p>Con motivo de la Solemnidad de la Reina y Madre de México y de todas las Américas, han llegado diversos grupos de peregrinos antorchistas.</p>
+<p>Ne ¿La montaña de</p>
+<p>Datos Editoriales. Registros. Director: Registrada en la Sra. De Excmo., Y Revmo. Sr. Dr. D. Patrimonio y Fomento Industrial: José Guadalupe Martín Rábago. 7 de febrero de 1983 Fundadora Expediente: 212332. Pbro. José A. Betancourt. Registrada en la Comisión Calificadora de Publicaciones y Revistas Ilustradas: Jefe de Redacción: Certificado de Licitud de Títulos No. 2579 Sr. Pbro. Jesús Ortiz Ayala (Secretaría de Gobernación): Diseño: Certificado de Licitud de Títulos No. Ldg. Josué Araiza Segura. 2579 Editor: (Expediente: 1/43283-3498) y Pedro Moreno 4312 No. 1645 Tel.: 713-2997 y 716-09-42 (Expediente: 1/43283-3498), Apdo. Post. No. 360 ambos de fecha 13 de abril de 2004 Diócesis de León, A.R. e-mail: oficina@cristorrey.arquidiocesisdeleon.org</p>
+<p>Suscripciones y Adquisiciones: Sr. Pbro. Jesús Ortiz Ayala Las suscripciones empezarán el 01 de enero o el mes en que se pague. Serán efectivas si las ampara su importe. Precios de la Revista En la República: $120.00 (doce meses) / $70.00 (seis meses) En el Extranjero: 35.00 Dis. (doce meses) / 15.00 Dis. (seis meses)</p>
+<p>Número suelto en la República: $20.00 Número atrasado: $25.00</p>
+<p>Número suelto en el Extranjero: 8.00 Dis. Número atrasado: 12.00 Dis.</p>
+<p>Correspondencia y envíos de dinero al Apartado 360 - León, Gto., México</p>
+<p>Revista impresa en: “CORTES E IMPRESOS” * BLVD. MARIANO ESCOBEDO #4310 * COL. FLORES MAGÓN * LEÓN, GTO. * TELS.: (477) 777-1656 / 57 FAX: (477) 777-1504 corteseimpresos@hotmail.com</p>
+<p>Correspondencia de Segunda Clase. Registro DGC. Núm. 002 Características: 219222210</p>
+<p>Noche feliz, los ángeles anuncian:</p>
+<p>Un gran gozo, nació el Salvador. Guiados por la luz de estrella irradiante, Esta es la noche de Dios que es amor. Así los magos guiados por la estrella llegaron a Jesús desde el Oriente.</p>
+<p>La señal: un niño con su madre en el pesebre humilde de un portal. Gloria al Señor, a Dios en las alturas, Al Rey de Reyes, ven en pobre cuna; al Rey inmortal, nació cual hombre, nuestro amigo y Redentor.</p>
+<p>Gloria de Dios en las alturas, Loor, Loor, a nuestro Redentor. Noche feliz, hoy ha nacido Cristo, hoy toda carne verá al Redentor; es nuestro Dios, el Dios que se hace niño, según anunció el ángel Gabriel.</p>
+<p>Un nuevo eleva cielo y tierra. Por fin podemos contemplar su faz. Gloria al Señor, a Dios en las alturas, Al Rey inmortal. Gloria al Señor, a Dios en las alturas, Loor, Loor, a nuestro Redentor.</p>
+</div><footer class="article-footer"><a href="#/11">↑ Lista</a><a class="nav-next" href="#/11">← Lista</a></footer></article>
+</main>
+<footer class="site-footer"><a href="index.html">Cristo Rey en México</a> · 2008 · OCR + CORREGIDO-B</footer>
+<script>
+(function(){
+const YEAR=2008;
+const M=new Set(["05", "11"]);
+const N={"01":"Enero", "02":"Febrero", "03":"Marzo", "04":"Abril", "05":"Mayo", "06":"Junio", "07":"Julio", "08":"Agosto", "09":"Septiembre", "10":"Octubre", "11":"Noviembre", "12":"Diciembre"};
+const MONTHS=document.getElementById("view-months");
+const E=document.getElementById("empty-month-view");
+const B=document.getElementById("breadcrumb");
+function hide(){MONTHS.hidden=true;document.querySelectorAll(".article-panel,[id^=view-articles-]").forEach(p=>p.hidden=true);E.hidden=true;}
+function crumb(p){B.innerHTML=p.map(x=>x.h?`<a href="${x.h}">${x.t}</a>`:`<span>${x.t}</span>`).join('<span class="sep">›</span>');}
+function parse(){
+  const h=(location.hash||"#/").replace(/^#\/?/,"");
+  let s=h.split("/").filter(Boolean);
+  if(s[0]===""+YEAR) s=s.slice(1);
+  return{m:s[0]||null,a:s[1]&&s[1].startsWith("articulo-")?+s[1].replace("articulo-",""):null};
+}
+function route(){
+  const{m,a}=parse();hide();try{scrollTo({top:0,behavior:"instant"});}catch(e){scrollTo(0,0);}
+  if(!m){MONTHS.hidden=false;crumb([{t:"Años",h:"index.html"},{t:""+YEAR}]);document.title="Cristo Rey · "+YEAR;return;}
+  const mn=N[m]||m;
+  if(a){const el=document.getElementById("article-"+m+"-"+a);if(el){el.hidden=false;crumb([{t:"Años",h:"index.html"},{t:""+YEAR,h:"#/" },{t:mn,h:"#/"+m},{t:"Art. "+a}]);document.title="Art. "+a+" · "+mn+" "+YEAR;return;}}
+  if(M.has(m)){const L=document.getElementById("view-articles-"+m);if(L){L.hidden=false;crumb([{t:"Años",h:"index.html"},{t:""+YEAR,h:"#/" },{t:mn}]);document.title=mn+" "+YEAR;return;}}
+  E.hidden=false;document.getElementById("empty-month-title").textContent=mn+" de "+YEAR;
+  crumb([{t:"Años",h:"index.html"},{t:""+YEAR,h:"#/" },{t:mn}]);
+}
+document.querySelectorAll(".month-btn").forEach(b=>b.onclick=()=>location.hash="#/"+b.dataset.month);
+document.body.addEventListener("click",e=>{const b=e.target.closest("[data-back]");if(!b)return;const x=b.dataset.back;if(x==="months")location.hash="#/";else if(x==="articles")location.hash="#/"+(b.dataset.month||"");});
+addEventListener("hashchange",route);if(!location.hash||location.hash==="#")location.hash="#/";route();
+})();
+</script>
+</body></html>
